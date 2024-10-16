@@ -42,6 +42,7 @@ export default function Home() {
       <section>
         <div className="main_content">
           <div className="text_block">
+            
             <h1>
               Segurança ao seu alcance, colaboração que transforma bairros
             </h1>
