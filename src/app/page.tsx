@@ -4,6 +4,15 @@ import "./homeStyles.css";
 export default function Home() {
   return (
     <div>
+      <div className="curves_background">
+        <Image
+          src="/svg/curvesPrimary.svg"
+          alt="Ilustração de segurança"
+          width={850}
+          height={550}
+        />
+      </div>
+
       <header>
         <div className="header_container">
           <Image
@@ -13,15 +22,6 @@ export default function Home() {
             width={150}
             height={150}
           />
-
-          <div className="curves_background">
-            <Image
-              src="/svg/curvesPrimary.svg"
-              alt="Ilustração de segurança"
-              width={950}
-              height={650}
-            />
-          </div>
 
           <nav>
             <ul className="nav_links">
@@ -42,7 +42,6 @@ export default function Home() {
       <section>
         <div className="main_content">
           <div className="text_block">
-            
             <h1>
               Segurança ao seu alcance, colaboração que transforma bairros
             </h1>
