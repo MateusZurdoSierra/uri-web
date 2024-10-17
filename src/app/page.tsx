@@ -1,5 +1,10 @@
 import Image from "next/image";
 import "./homeStyles.css";
+import Header from "@/components/Header";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
+import Feature from "@/components/Feature";
 
 export default function Home() {
   return (
@@ -8,36 +13,12 @@ export default function Home() {
         <Image
           src="/svg/curvesPrimary.svg"
           alt="Ilustração de segurança"
-          width={850}
-          height={550}
+          width={1050}
+          height={750}
         />
       </div>
 
-      <header>
-        <div className="header_container">
-          <Image
-            src="/svg/logoPrimary.svg"
-            alt="Logo URI"
-            className="logo"
-            width={150}
-            height={150}
-          />
-
-          <nav>
-            <ul className="nav_links">
-              <li>
-                <a href="about.html">Sobre o Uri</a>
-              </li>
-              <li>
-                <a href="features.html">Funcionalidades</a>
-              </li>
-              <li>
-                <a href="contact.html">Contatos</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <section>
         <div className="main_content">
@@ -56,70 +37,20 @@ export default function Home() {
           <Image
             src="/svg/social.svg"
             alt="Ilustração de segurança"
-            width={350}
-            height={250}
+            width={450}
+            height={350}
           />
         </div>
         <div className="call_to_action">
           <h2>
-            Fortaleça a segurança do seu bairro com a colaboração dos seus
-            vizinhos.
+            Fortaleça a segurança do seu bairro com <br /> a colaboração dos
+            seus vizinhos.
           </h2>
+          <FontAwesomeIcon icon={faChevronDown} className="icon" />
         </div>
       </section>
 
-      <section className="container_secondary">
-        <div className="container_security_text">
-          <div>
-            <h3>O futuro do seu bairro</h3>
-            <h2>Segurança em tempo real</h2>
-          </div>
-
-          <p>
-            Receba alertas e notificações sobre atividades suspeitas no seu
-            bairro e fique sempre um passo à frente.
-          </p>
-        </div>
-
-        <div className="features">
-          <div className="feature_item">
-            <Image
-              src="/svg/person.svg"
-              alt="Botão de Pânico"
-              className="feature_img"
-              width={150}
-              height={150}
-            />
-          </div>
-          <div className="feature_item">
-            <Image
-              src="/svg/person.svg"
-              alt="Mapeamento do bairro"
-              className="feature_img"
-              width={150}
-              height={150}
-            />
-          </div>
-          <div className="feature_item">
-            <Image
-              src="/svg/person.svg"
-              alt="Registro de Incidentes"
-              className="feature_img"
-              width={150}
-              height={150}
-            />
-          </div>
-          <div className="feature_item">
-            <Image
-              src="/svg/person.svg"
-              alt="Conexão com Vizinhos"
-              className="feature_img"
-              width={150}
-              height={150}
-            />
-          </div>
-        </div>
-      </section>
+      <Feature />
 
       <section className="container_tertiary">
         <div className="image_text_overlay">
