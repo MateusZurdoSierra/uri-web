@@ -24,7 +24,8 @@ export default function Home() {
         <div className="main_content">
           <div className="text_block">
             <h1>
-              Segurança ao seu alcance, colaboração que transforma bairros
+              <span className="span_title">Segurança</span> ao seu alcance,
+              colaboração que transforma bairros
             </h1>
 
             <p>
@@ -53,42 +54,49 @@ export default function Home() {
       <Feature />
 
       <section className="container_tertiary">
-        <div className="image_text_overlay">
-          <Image
-            src="/svg/person.svg"
-            alt="Jovem caminhando ao parque"
-            className="image"
-            width={350}
-            height={750}
-          />
-        </div>
-        <div className="text_overlay">
-          <h2 className="text">
-            O que torna o <span>Uri</span> único?
-          </h2>
-          <p className="text">
-            Nosso propósito é provar que a segurança começa com a colaboração.
-            Queremos transformar bairros em comunidades unidas, onde cada pessoa
-            faz a diferença.
-          </p>
-          <a href="#app" className="cta_link">
-            Conheça o nosso app &rarr;
-          </a>
+        <div className="horizontal_box">
+          <div className="sem_classe">
+            <div className="image_text_overlay">
+              <Image
+                src="/svg/person.svg"
+                alt="Jovem caminhando ao parque"
+                className="image"
+                width={450}
+                height={850}
+              />
+            </div>
+            <div className="text_overlay">
+              <h2 className="text">
+                O que torna <br /> o <span>Uri</span> único?
+              </h2>
+              <p className="text">
+                Nosso propósito é provar que a segurança começa com a
+                colaboração. Queremos transformar bairros em comunidades unidas,
+                onde cada pessoa faz a diferença.
+              </p>
+              <a href="#app" className="cta_link">
+                Conheça o nosso app &rarr;
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="container_quaternary">
-        <h2>
-          O Uri conecta você à sua comunidade para construir um ambiente mais
-          seguro.{" "}
-        </h2>
+        <div className="call_to_action">
+          <h2>
+            O Uri conecta você à sua comunidade para <br /> construir um
+            ambiente mais seguro.{" "}
+          </h2>
+        </div>
         <div className="section_block incident">
           <Image
             src="/svg/incidentPhone.svg"
             alt="Registro de Incidentes"
-            width={250}
-            height={300}
+            width={350}
+            height={400}
           />
+
           <div className="text">
             <h3>Registro de Incidentes</h3>
             <p>Registre eventos suspeitos em segundos.</p>
@@ -104,8 +112,8 @@ export default function Home() {
           <Image
             src="/svg/homePhone.svg"
             alt="Notificações e Alertas"
-            width={250}
-            height={300}
+            width={350}
+            height={400}
           />
         </div>
 
@@ -113,8 +121,8 @@ export default function Home() {
           <Image
             src="/svg/alertPhone.svg"
             alt="SOS de Emergência"
-            width={250}
-            height={300}
+            width={350}
+            height={400}
           />
           <div className="text">
             <h3>SOS de Emergência</h3>
@@ -135,11 +143,15 @@ export default function Home() {
             height={300}
           />
         </div>
-        <h2>
-          Juntos, relatamos ocorrências, cuidamos uns dos outros e fazemos do
-          nosso bairro um lugar melhor para viver. Tudo de forma simples e
-          gratuita.
-        </h2>
+        <div className="call_to_action">
+          <h2>
+            Feito por quem mora em casas de bairro, para quem vive fora de
+            condomínios. <br /> Sabemos o que você enfrenta e acreditamos que,
+            juntos, podemos <br />
+            tornar nossos bairros tão seguros quanto condomínios.
+          </h2>
+        </div>
+        <h2></h2>
       </section>
 
       <section className="container_community_security">
@@ -151,11 +163,39 @@ export default function Home() {
                 comunidade.
               </h2>
               <p>
-                Feito por quem mora em casas de bairro, para quem vive fora de
-                condomínios. Sabemos o que você enfrenta e acreditamos que,
-                juntos, podemos tornar nossos bairros tão seguros quanto
-                condomínios.
+                Juntos, relatamos ocorrências, cuidamos uns dos outros e fazemos
+                do nosso bairro um lugar melhor para viver. Tudo de forma
+                simples e gratuita.
               </p>
+              <div className="app_buttons">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.seuapp.android"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/svg/GetItOnGooglePlayBadge.png"
+                    alt="Baixar na Google Play"
+                    width={150}
+                    height={100}
+                    style={{ objectFit: "contain" }}
+                  />
+                </a>
+
+                <a
+                  href="https://apps.apple.com/us/app/id1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/svg/AppStoreBadge.svg"
+                    alt="Baixar na App Store"
+                    width={150}
+                    height={100}
+                    style={{ objectFit: "contain" }}
+                  />
+                </a>
+              </div>
             </div>
             <div className="app-store-links">
               <a
@@ -175,73 +215,63 @@ export default function Home() {
               ></a>
             </div>
           </div>
-          <div className="image_community_security">
-            <Image
-              src="/svg/logoPrimary.svg"
-              alt="Imagem de celulares com o app Uri"
-              className="incident_alert_emergence"
-              width={150}
-              height={150}
-            />
-          </div>
         </div>
       </section>
 
       <section className="container_form_section">
-        <div className="text_block_form"></div>
+        <div className="form_image_container">
+          <h2>
+            Traga o Uri para o seu bairro, facilitando a segurança e colaboração
+            entre os moradores.
+          </h2>
+
+          <Image
+            src="/svg/localization.svg"
+            alt="Imagem ilustrativa"
+            width={450}
+            height={450}
+          />
+        </div>
         <div className="form_content">
-          <div className="form_image_container">
-            <h2>
-              Traga o Uri para o seu bairro, facilitando a segurança e
-              colaboração entre os moradores.
-            </h2>
+          <form>
+            <label htmlFor="nome">Nome*</label>
+            <input type="text" id="nome" name="nome" required />
 
-            <Image
-              src="/svg/localization.svg"
-              alt="Imagem ilustrativa"
-              width={150}
-              height={150}
-            />
-            <form>
-              <label htmlFor="nome">Nome*</label>
-              <input type="text" id="nome" name="nome" required />
+            <label htmlFor="email">E-mail*</label>
+            <input type="email" id="email" name="email" required />
 
-              <label htmlFor="email">E-mail*</label>
-              <input type="email" id="email" name="email" required />
+            <label htmlFor="telefone">Número de telefone com DDD*</label>
+            <input type="tel" id="telefone" name="telefone" required />
 
-              <label htmlFor="telefone">Número de telefone com DDD*</label>
-              <input type="tel" id="telefone" name="telefone" required />
+            <label htmlFor="cep">CEP*</label>
+            <input type="text" id="cep" name="cep" required />
 
-              <label htmlFor="cep">CEP*</label>
-              <input type="text" id="cep" name="cep" required />
+            <label htmlFor="rua">Rua*</label>
+            <input type="text" id="rua" name="rua" required />
 
-              <label htmlFor="rua">Rua*</label>
-              <input type="text" id="rua" name="rua" required />
-
-              <div className="form-inline">
-                <div className="form-group">
-                  <label htmlFor="numero">Número*</label>
-                  <input type="text" id="numero" name="numero" required />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="cidade">Cidade*</label>
-                  <input type="text" id="cidade" name="cidade" required />
-                </div>
+            <div className="form-inline">
+              <div className="form-group">
+                <label htmlFor="numero">Número*</label>
+                <input type="text" id="numero" name="numero" required />
               </div>
 
-              <div className="checkbox">
-                <input type="checkbox" id="terms" required />
-                <label htmlFor="terms">
-                  Afirmo e concordo que as informações preenchidas neste
-                  formulário são verdadeiras, estou ciente que o time comercial
-                  do Uri entrará em contato.
-                </label>
+              <div className="form-group">
+                <label htmlFor="cidade">Cidade*</label>
+                <input type="text" id="cidade" name="cidade" required />
               </div>
+            </div>
 
-              <button type="submit">Enviar</button>
-            </form>
-          </div>
+            <div className="checkbox">
+              <input type="checkbox" id="terms" required />
+              <label htmlFor="terms" className="custom-checkbox-label">
+                <p>Afirmo e concordo que as informações preenchidas neste
+                formulário são verdadeiras, estou ciente que o time comercial do
+                Uri entrará em contato.</p>
+              </label>
+            </div>
+
+            <button type="submit">Enviar</button>
+          </form>
         </div>
       </section>
 

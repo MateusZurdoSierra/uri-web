@@ -88,8 +88,14 @@ body {
 
 .text_block h1 {
   font-size: 2.5rem;
-  color: var(--primary900);
+  color: var(--neutral900);
   margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.span_title {
+  color: var(--primary500);
+  font-weight: 700;
 }
 
 .text_block p {
@@ -136,7 +142,6 @@ body {
   height: 50%;
   display: flex;
   justify-content: center;
-  
 }
 
 .container_box {
@@ -220,53 +225,108 @@ body {
 
 .container_tertiary {
   display: flex;
-  padding: 0 10rem;
-  justify-content: space-between;
+
+  justify-content: center;
+  align-items: stretch;
+  /* background-color: var(--semantic-orange); */
+  flex-direction: column;
+  height: 800px;
+}
+
+.horizontal_box {
+  background-color: var(--neutral100);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  position: relative;
+}
+
+.image_text_overlay {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: var(--semantic-orange);
+  flex-direction: column;
+  width: 60%;
+  /* position: absolute; */
+}
+
+.sem_classe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
 }
 
 .container_tertiary h2 {
   color: var(--neutral900);
   font-size: 40px;
-  text-align: right;
   flex: 1;
+  font-weight: 500;
 }
 
 .container_tertiary p {
-  text-align: right;
+  text-align: left;
   justify-content: space-between;
   flex: 1;
   gap: 10px;
-  padding-left: 5%;
 }
 
 .container_tertiary a {
-  padding-left: 70%;
+  text-decoration: none;
+  color: var(--primary900);
+  font-weight: 500;
+}
+
+.text_overlay {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text_overlay span {
   color: var(--primary900);
+  font-weight: 700;
 }
 
 .container_quaternary {
-  padding: 0 10rem;
-  background-color: #97ff7d;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: 2500px;
 }
 
 .section_block {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto 40px auto;
+  width: 1200px;
+  gap: 5rem;
+  height: 500px;
 }
 
 .section_block img {
-  width: 50%;
+  width: 30%;
+  max-width: 100%;
+  height: 100%;
 }
 
 .section_block .text {
   max-width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .section_block h3 {
@@ -286,44 +346,63 @@ h2 {
 
 .container_community_security {
   display: flex;
-  padding: 0 10rem;
+  /* padding: 0 10rem; */
   justify-content: center;
-  background-color: #1e86db;
+  /* background-color: #1e86db; */
+  height: 500px;
 }
 
 .community_security_content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .left_block_security {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding-right: 20px;
+  flex-direction: row;
   height: 100%;
+  align-content: center;
+  align-items: center;
+}
+
+.text_block_security {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .text_block_security h2 {
   color: var(--neutral900);
+  font-size: 2.1rem;
 }
 
 .text_block_security p {
-  margin-bottom: 20px;
-  margin-top: 10%;
+}
+
+.app_buttons {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os botões */
+  margin: 20px 0; /* Margem opcional */
+}
+
+.store_button {
+  width: 150px; /* Tamanho dos botões, ajuste conforme necessário */
 }
 
 .app-store-links {
-  margin-top: auto;
   display: flex;
-  gap: 10px;
+  width: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-store-links img {
-  max-width: 400px;
-  height: auto;
+  width: 80%;
+  height: 80%;
 }
 
 .image_community_security {
@@ -339,9 +418,16 @@ h2 {
 }
 
 .container_form_section {
+  gap: 80px;
+  height: 700px;
   display: flex;
-  padding: 0 10rem;
-  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  width: 80%; /* Ajuste a largura como necessário */
+  max-width: 1000px; /* Limite a largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  justify-content: space-between; /* Espaça os itens dentro do contêiner */
 }
 
 .text_block_form {
@@ -351,7 +437,7 @@ h2 {
 }
 
 .form_content {
-  max-width: 100%;
+  width: 500px;
   margin: 0;
 }
 
@@ -367,36 +453,54 @@ h2 {
 }
 
 .form_image_container {
-  margin-top: 15%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
-  height: 10%;
+  flex-direction: column;
+  height: 80%;
+  width: 50%;
 }
 
 .form_image_container img {
-  width: 50%;
-  height: auto;
-  margin-top: auto;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
   background-color: var(--neutral0);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px var(--neutral900);
-  max-width: 100%;
+  padding: 10% 8%;
+  border-radius: 25px;
+  box-shadow: 0px 4px 12px var(--neutral300);
+  width: 100%;
 }
 
 form input,
 form button {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid var(--neutral900);
+  border: 1px solid var(--neutral300);
+  transition: border-color 0.3s, box-shadow 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Efeito de hover para inputs */
+form input:hover {
+  border-color: var(
+    --primary900
+  ); /* Altera a cor da borda quando o mouse está sobre o input */
+}
+
+/* Efeito quando o input está focado */
+form input:focus {
+  border-color: var(
+    --primary900
+  ); /* Altera a cor da borda quando o input é focado */
+  outline: none; /* Remove o contorno padrão */
+}
+
+form label {
+  font-size: 0.875rem;
 }
 
 .form-inline {
@@ -406,6 +510,60 @@ form button {
 
 .form-group {
   flex: 1;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox-label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.custom-checkbox-label p {
+  font-size: 0.75rem;
+}
+
+.custom-checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary900);
+  border-radius: 4px;
+  background-color: white;
+  transition: background-color 0.2s ease;
+}
+
+.checkbox input[type="checkbox"]:checked + .custom-checkbox-label::before {
+  background-color: var(--primary900);
+  border-color: var(--primary900);
+}
+
+.checkbox input[type="checkbox"]:checked + .custom-checkbox-label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
 }
 
 form button {
