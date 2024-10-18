@@ -1,0 +1,20 @@
+.title {
+  margin: 0;
+  font-weight: bold;
+}
+
+.title1 {
+  font-size: 2rem;
+  color: var(--primary900);
+  font-weight: 600;
+}
+
+.title2 {
+  font-size: 2rem;
+  color: var(--neutral700);
+}
+
+.title3 {
+  font-size: 1rem;
+  color: var(--primary900);
+}

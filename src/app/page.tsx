@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import Feature from "@/components/Feature";
+import Collapse from "@/components/Collapse";
+import Title from "@/components/TitleProps";
 
 export default function Home() {
   return (
@@ -42,14 +44,19 @@ export default function Home() {
             height={350}
           />
         </div>
+      </section>
+
+      <div className="container">
         <div className="call_to_action">
-          <h2>
-            Fortaleça a segurança do seu bairro com <br /> a colaboração dos
-            seus vizinhos.
-          </h2>
+          <Title
+            text="Fortaleça a segurança do seu bairro com a colaboração dos
+            seus vizinhos."
+            level={1}
+          />
+
           <FontAwesomeIcon icon={faChevronDown} className="icon" />
         </div>
-      </section>
+      </div>
 
       <Feature />
 
@@ -82,13 +89,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container_quaternary">
+      <div className="container">
         <div className="call_to_action">
-          <h2>
-            O Uri conecta você à sua comunidade para <br /> construir um
-            ambiente mais seguro.{" "}
-          </h2>
+          <Title
+            text="O Uri conecta você à sua comunidade para construir um
+            ambiente mais seguro."
+            level={1}
+          />
         </div>
+      </div>
+
+      <section className="container_quaternary">
         <div className="section_block incident">
           <Image
             src="/svg/incidentPhone.svg"
@@ -143,25 +154,27 @@ export default function Home() {
             height={300}
           />
         </div>
-        <div className="call_to_action">
-          <h2>
-            Feito por quem mora em casas de bairro, para quem vive fora de
-            condomínios. <br /> Sabemos o que você enfrenta e acreditamos que,
-            juntos, podemos <br />
-            tornar nossos bairros tão seguros quanto condomínios.
-          </h2>
-        </div>
-        <h2></h2>
       </section>
+
+      <div className="container">
+        <div className="call_to_action">
+          <Title
+            text="Feito por quem mora em casas de bairro, para quem vive fora de condomínios. Sabemos o que você enfrenta e acreditamos que, juntos, podemos tornar nossos bairros tão seguros quanto condomínios."
+            level={1}
+          />
+        </div>
+      </div>
 
       <section className="container_community_security">
         <div className="community_security_content">
           <div className="left_block_security">
             <div className="text_block_security">
-              <h2>
-                A segurança começa aqui, baixe o Uri e conecte-se com sua
-                comunidade.
-              </h2>
+              <Title
+                text="A segurança começa aqui, baixe o Uri e conecte-se com sua
+                comunidade."
+                level={2}
+              />
+
               <p>
                 Juntos, relatamos ocorrências, cuidamos uns dos outros e fazemos
                 do nosso bairro um lugar melhor para viver. Tudo de forma
@@ -219,11 +232,23 @@ export default function Home() {
       </section>
 
       <section className="container_form_section">
-        <div className="form_image_container">
-          <h2>
-            Traga o Uri para o seu bairro, facilitando a segurança e colaboração
-            entre os moradores.
-          </h2>
+        
+      <div className="curves_background_two">
+        <Image
+          src="/svg/curvesTwo.svg"
+          alt="Ilustração de segurança"
+          width={2000}
+          height={1700}
+        />
+      </div>
+
+      <div className="form_size">
+      <div className="form_image_container">
+          <Title
+            text="Traga o Uri para o seu bairro, facilitando a segurança e colaboração
+            entre os moradores."
+            level={2}
+          />
 
           <Image
             src="/svg/localization.svg"
@@ -264,27 +289,105 @@ export default function Home() {
             <div className="checkbox">
               <input type="checkbox" id="terms" required />
               <label htmlFor="terms" className="custom-checkbox-label">
-                <p>Afirmo e concordo que as informações preenchidas neste
-                formulário são verdadeiras, estou ciente que o time comercial do
-                Uri entrará em contato.</p>
+                <p>
+                  Afirmo e concordo que as informações preenchidas neste
+                  formulário são verdadeiras, estou ciente que o time comercial
+                  do Uri entrará em contato.
+                </p>
               </label>
             </div>
 
             <button type="submit">Enviar</button>
           </form>
         </div>
+      </div>
+        
       </section>
 
       <section className="container_doubts">
-        <h2 className="text_fac_doubts">Ficou com dúvidas? Nós te ajudamos </h2>
-        <div className="fac_doubts">
+      <div className="container">
+        <div className="call_to_action">
+          <Title
+            text="Ficou com dúvidas? Nós te ajudamos"
+            level={1}
+          />
+        </div>
+      </div>
+
+
+        {/* <Title text="Ficou com dúvidas? Nós te ajudamos" level={1} />{" "} */}
+        <h2 className="text_fac_doubts"></h2>
+        <Collapse title="O Uri substitui a polícia ou serviços de emergência?">
+          <p>
+            Não. <strong>O Uri é uma ferramenta de apoio</strong> que fortalece
+            a colaboração entre moradores, ajudando a identificar e compartilhar
+            informações sobre incidentes no bairro. No entanto, em situações
+            graves, como crimes ou emergências médicas, é essencial acionar as
+            autoridades competentes, como a polícia ou os bombeiros.
+          </p>
+        </Collapse>
+        <Collapse title="Como o Uri protege minha privacidade?">
+          <p>
+            <strong>A sua privacidade é nossa prioridade.</strong> No Uri,
+            implementamos rigorosas medidas de segurança para proteger seus
+            dados pessoais. As informações compartilhadas são criptografadas, e
+            você tem o controle sobre o que deseja ou não compartilhar.
+          </p>
+        </Collapse>
+        <Collapse title="Quais tipos de incidentes posso registrar no Uri?">
+          <div>
+            <p>
+              No Uri, você pode registrar diversos tipos de incidentes para
+              manter sua comunidade informada e segura. Aqui estão alguns
+              exemplos:
+            </p>
+            <ul>
+              <li>
+                <strong> Atividade suspeita: </strong>Movimentações incomuns ou
+                comportamentos suspeitos no bairro.
+              </li>
+              <li>
+                <strong>Roubo ou assalto:</strong> Relatos de crimes contra
+                propriedades ou pessoas.
+              </li>
+              <li>
+                <strong>Incêndio:</strong> Focos de incêndio em áreas
+                residenciais ou comerciais.
+              </li>
+              <li>
+                {" "}
+                <strong>Vandalismo:</strong> Danos a bens públicos ou privados.
+              </li>
+              <li>
+                <strong>Inundações ou desastres naturais:</strong> Situações de
+                emergência causadas por condições climáticas.
+              </li>
+              <li>
+                <strong>Animais perdidos ou encontrados:</strong> Avisos sobre
+                animais domésticos fora de lugar.
+              </li>
+            </ul>
+          </div>
+        </Collapse>
+        <Collapse title="Quem pode ver os incidentes que eu reportar?">
+          <p>
+            Os incidentes que você reportar no Uri{" "}
+            <strong>
+              são visíveis para todos os moradores que fazem parte do seu
+              bairro.
+            </strong>
+            Isso permite que os vizinhos fiquem informados sobre o que está
+            acontecendo na área e ajudem a manter o bairro mais seguro.
+          </p>
+        </Collapse>
+        {/* <div className="fac_doubts">
           <ul>
             <li>O Uri substitui a polícia ou serviços de emergência?</li>
             <li>Como o Uri protege minha privacidade?</li>
             <li>Quais tipos de incidentes posso registrar no Uri?</li>
             <li>Quem pode ver os incidentes que eu reportar?</li>
           </ul>
-        </div>
+        </div> */}
       </section>
 
       <section className="before_footer">

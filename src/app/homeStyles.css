@@ -72,13 +72,13 @@ body {
 
 .main_content {
   display: flex;
-  min-height: 600px;
-  max-width: 1500px;
+  height: 600px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 10rem;
+  margin-top: 3rem;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+
   /* background-color: #ffaf2a; */
 }
 
@@ -102,22 +102,21 @@ body {
   font-size: 1rem;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .call_to_action {
-  margin-top: 2.5rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
-}
-
-.call_to_action h2 {
-  color: var(--primary900);
-  font-size: 2srem;
-  font-weight: 500;
-  overflow-wrap: break-word;
-  white-space: normal;
+  width: 1000px;
+  margin: 0px auto;
+  gap: 2rem;
+  padding: 4rem;
 }
 
 .icon {
@@ -225,7 +224,7 @@ body {
 
 .container_tertiary {
   display: flex;
-
+  margin: 0 auto;
   justify-content: center;
   align-items: stretch;
   /* background-color: var(--semantic-orange); */
@@ -299,16 +298,15 @@ body {
   align-items: stretch;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  height: 2500px;
+  min-height: 100vh; /* Altura mínima da página inteira */
+  padding: 4rem; /* Espaçamento extra na parte inferior */
 }
 
 .section_block {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  margin: 0 auto 40px auto;
+  margin: 0 auto;
   width: 1200px;
   gap: 5rem;
   height: 500px;
@@ -346,10 +344,8 @@ h2 {
 
 .container_community_security {
   display: flex;
-  /* padding: 0 10rem; */
+  margin: 60px auto;
   justify-content: center;
-  /* background-color: #1e86db; */
-  height: 500px;
 }
 
 .community_security_content {
@@ -357,14 +353,16 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1000px;
+  padding: 64px;
 }
 
 .left_block_security {
   display: flex;
   flex-direction: row;
-  height: 100%;
-  align-content: center;
-  align-items: center;
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  width: 100%; /* Define a largura total ou ajuste conforme necessário */
+  height: 600px;
 }
 
 .text_block_security {
@@ -372,11 +370,6 @@ h2 {
   width: 50%;
   gap: 20px;
   flex-direction: column;
-}
-
-.text_block_security h2 {
-  color: var(--neutral900);
-  font-size: 2.1rem;
 }
 
 .text_block_security p {
@@ -419,15 +412,34 @@ h2 {
 
 .container_form_section {
   gap: 80px;
-  height: 700px;
   display: flex;
-  flex-direction: row;
-  align-content: center;
+  align-content: space-around;
   align-items: center;
-  width: 80%; /* Ajuste a largura como necessário */
-  max-width: 1000px; /* Limite a largura máxima */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  justify-content: space-between; /* Espaça os itens dentro do contêiner */
+  width: 100%;
+  margin: auto;
+  padding: 64px;
+  overflow: hidden;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.curves_background_two {
+  display: flex;
+  width: 100%; /* Largura total do container */
+  align-items: flex-start;
+  justify-content: flex-end; /* Alinha o conteúdo à esquerda */
+  position: absolute; /* Permite mover livremente dentro do container */
+  transform: translateX(1000px); /* Move o elemento 20px para a esquerda */
+  z-index: -1;
+}
+
+.form_size {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
 }
 
 .text_block_form {
@@ -437,7 +449,7 @@ h2 {
 }
 
 .form_content {
-  width: 500px;
+  width: 50%;
   margin: 0;
 }
 
@@ -458,11 +470,7 @@ h2 {
   align-items: center;
   gap: 20px;
   flex-direction: column;
-  height: 80%;
-  width: 50%;
-}
-
-.form_image_container img {
+  width: 40%;
 }
 
 form {
@@ -472,7 +480,7 @@ form {
   background-color: var(--neutral0);
   padding: 10% 8%;
   border-radius: 25px;
-  box-shadow: 0px 4px 12px var(--neutral300);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   width: 100%;
 }
 
@@ -481,22 +489,16 @@ form button {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid var(--neutral300);
-  transition: border-color 0.3s, box-shadow 0.3s; /* Adiciona uma transição suave */
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Efeito de hover para inputs */
 form input:hover {
-  border-color: var(
-    --primary900
-  ); /* Altera a cor da borda quando o mouse está sobre o input */
+  border-color: var(--primary900);
 }
 
-/* Efeito quando o input está focado */
 form input:focus {
-  border-color: var(
-    --primary900
-  ); /* Altera a cor da borda quando o input é focado */
-  outline: none; /* Remove o contorno padrão */
+  border-color: var(--primary900);
+  outline: none;
 }
 
 form label {
@@ -506,10 +508,14 @@ form label {
 .form-inline {
   display: flex;
   gap: 10px;
+  width: 100%;
 }
 
 .form-group {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
 }
 
 .checkbox {
@@ -587,16 +593,27 @@ form button:hover {
 }
 
 .container_doubts {
-  padding: 0 10rem;
+  display: flex; /* Ativa o layout flex */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  flex-direction: column; /* Organiza os itens em coluna */
+  margin-bottom: 80px;
 }
 
 .text_fac_doubts {
-  text-align: center;
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 20px; /* Espaço abaixo do texto */
 }
 
 .fac_doubts {
-  text-align: center;
-  text-decoration: none;
+  text-align: center; /* Centraliza o texto */
+  text-decoration: none; /* Remove o sublinhado de links */
+  color: var(--primary700); /* Cor do texto */
+  transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+.fac_doubts:hover {
+  color: var(--primary700); /* Cor ao passar o mouse */
 }
 
 .before_footer {
