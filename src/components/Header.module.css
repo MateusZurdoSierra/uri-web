@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral0);
+  padding: 1rem 0;
+  box-shadow: inset 0 -1px #c5d6e0;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+  width: 90px;
+  height: auto;
+}
+
+/* Links de navegação */
+.navLinks {
+  display: flex;
+  gap: 6rem; /* Espaçamento entre os links */
+  list-style: none;
+}
+
+/* Estilos dos links */
+.navLinks li a {
+  color: var(--primary900);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.navLinks li a:hover {
+  text-decoration: underline;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column; /* Muda a direção para coluna em telas menores */
+    align-items: flex-start; /* Alinha itens ao início */
+    padding: 0 10px; /* Ajusta o padding para telas menores */
+  }
+
+  .navLinks {
+    flex-direction: column; /* Muda a direção para coluna */
+    gap: 1rem; /* Ajusta o espaço entre os links */
+    width: 100%; /* Faz os links ocuparem a largura total */
+  }
+
+  .navLinks li {
+    width: 100%; /* Faz cada item de link ocupar toda a largura */
+  }
+
+  .navLinks li a {
+    text-align: center; /* Centraliza o texto dos links */
+    font-size: 1rem; /* Aumenta o tamanho da fonte em telas menores */
+  }
+}

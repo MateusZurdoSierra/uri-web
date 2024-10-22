@@ -1,22 +1,30 @@
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 .button {
   color: var(--primary900);
   padding: 15px 20px;
   border: none;
   cursor: pointer;
   border-bottom: 4px solid var(--primary900);
-  width: 700px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--primary50);
   font-size: 1.5rem;
+  transition: background-color 0.3s;
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 700px;
+  width: 100%;
   max-height: 900px;
   overflow: hidden;
   transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
@@ -30,14 +38,21 @@
   color: var(--neutral700);
   padding: 15px;
   text-align: justify;
-  line-height: 1.5; /* Ajuste o valor para definir a altura da linha */
+  line-height: 1.5;
 }
 
-.childrenText p {
-  margin: 0; /* Remove margens do parágrafo para melhor controle de espaçamento */
-  line-height: 1.5; /* Pode definir a altura da linha aqui também, se preferir */
+/* Responsividade */
+@media (max-width: 600px) {
+  .button {
+    font-size: 1.25rem;
+  }
+
+  .childrenText {
+    font-size: 0.875rem;
+  }
 }
 
+/* Classes para controle de estado */
 .collapsed {
   max-height: 0;
   opacity: 0;
@@ -49,32 +64,7 @@
   opacity: 1;
 }
 
-.content:not(.collapsed) {
-  opacity: 1;
-}
-
 .rotate {
   transform: rotate(180deg);
   transition: transform 0.3s ease-out;
-}
-
-.childrenText {
-  font-size: 1rem;
-  color: var(--neutral700);
-  padding: 15px;
-  text-align: left;
-  line-height: 1.5; /* Define a altura da linha para melhor legibilidade */
-}
-
-.childrenText p {
-  margin: 0 0 10px; /* Espaço inferior para separar o parágrafo da lista */
-}
-
-.childrenText ul {
-  padding-left: 20px; /* Indentação para a lista */
-  list-style-type: disc; /* Estilo da lista com marcadores */
-}
-
-.childrenText li {
-  margin-bottom: 5px; /* Espaçamento entre os itens da lista */
 }

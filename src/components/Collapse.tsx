@@ -1,8 +1,8 @@
-"use client"; // Certifique-se de que isso esteja no topo
+"use client";
 
 import React, { useState, ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // Importa as animações
-import styles from "./Collapse.module.css"; // Importa os estilos
+import styles from "./Collapse.module.css";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -15,21 +15,29 @@ const Collapse: React.FC<CollapseProps> = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
-      <button onClick={toggleCollapse} className={styles.button}>
+    <div className={styles.container}>
+      <button
+        onClick={toggleCollapse}
+        className={styles.button}
+        aria-expanded={isOpen}
+        aria-controls="collapse-content" // Indica qual conteúdo é controlado
+      >
         {title}
         <FontAwesomeIcon
           icon={faChevronDown}
           className={`${isOpen ? styles.rotate : ""}`}
         />
       </button>
-      <div className={`${styles.content}`}>
+      <div
+        className={`${styles.content} ${
+          isOpen ? styles.expanded : styles.collapsed
+        }`}
+        id="collapse-content"
+      >
         <AnimatePresence mode="wait">
           {isOpen && (
             <motion.div

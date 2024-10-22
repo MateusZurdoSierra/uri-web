@@ -1,22 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link'; 
-
+import styles from './Header.module.css'; // Certifique-se de criar e definir este arquivo de CSS
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <div className="header_container">
+    <header className={styles.header}>
+      <div className={styles.headerContainer}>
         <Image
           src="/svg/logoPrimary.svg" 
           alt="Logo URI"
-          className="logo"
+          className={styles.logo}
           width={90}
           height={150}
         />
 
         <nav>
-          <ul className="nav_links">
+          <ul className={styles.navLinks}>
             <li>
               <Link href="/about">Sobre o Uri</Link>
             </li>

@@ -7,6 +7,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Feature from "@/components/Feature";
 import Collapse from "@/components/Collapse";
 import Title from "@/components/TitleProps";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -24,25 +25,28 @@ export default function Home() {
 
       <section>
         <div className="main_content">
-          <div className="text_block">
-            <h1>
-              <span className="span_title">Segurança</span> ao seu alcance,
-              colaboração que transforma bairros
-            </h1>
+          <div className="content-left">
+            <div className="text_block">
+              <h1>
+                <span className="span_title">Segurança</span> ao seu alcance,
+                colaboração que transforma bairros
+              </h1>
 
-            <p>
-              Com o Uri, moradores de casas de bairro se unem para relatar
-              atividades suspeitas e proteger a vizinhança. Juntos podemos estar
-              tão seguros quanto em um condomínio.
-            </p>
+              <p>
+                Com o Uri, moradores de casas de bairro se unem para relatar
+                atividades suspeitas e proteger a vizinhança. Juntos podemos
+                estar tão seguros quanto em um condomínio.
+              </p>
+            </div>
           </div>
-
-          <Image
-            src="/svg/social.svg"
-            alt="Ilustração de segurança"
-            width={450}
-            height={350}
-          />
+          <div className="content-right">
+            <Image
+              src="/svg/social.svg"
+              alt="Ilustração de segurança"
+              width={450}
+              height={350}
+            />
+          </div>
         </div>
       </section>
 
@@ -211,111 +215,97 @@ export default function Home() {
               </div>
             </div>
             <div className="app-store-links">
-              <a
-                href="https://apps.apple.com/us/app/your-app-name/id123456789"
-                target="_blank"
-              >
-                <Image
-                  src="/svg/phones.svg"
-                  alt="Baixar na App Store"
-                  width={250}
-                  height={300}
-                />
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.yourappname"
-                target="_blank"
-              ></a>
+              <Image
+                src="/svg/phone_download.svg"
+                alt="Baixar na App Store"
+                width={350}
+                height={400}
+                quality={100} // Para garantir a melhor qualidade de imagem
+                objectFit="contain" // Mantém a proporção da imagem
+              />
             </div>
           </div>
         </div>
       </section>
 
       <section className="container_form_section">
-        
-      <div className="curves_background_two">
-        <Image
-          src="/svg/curvesTwo.svg"
-          alt="Ilustração de segurança"
-          width={2000}
-          height={1700}
-        />
-      </div>
-
-      <div className="form_size">
-      <div className="form_image_container">
-          <Title
-            text="Traga o Uri para o seu bairro, facilitando a segurança e colaboração
-            entre os moradores."
-            level={2}
-          />
-
+        <div className="curves_background_two">
           <Image
-            src="/svg/localization.svg"
-            alt="Imagem ilustrativa"
-            width={450}
-            height={450}
+            src="/svg/curvesTwo.svg"
+            alt="Ilustração de segurança"
+            width={2000}
+            height={1700}
           />
         </div>
-        <div className="form_content">
-          <form>
-            <label htmlFor="nome">Nome*</label>
-            <input type="text" id="nome" name="nome" required />
 
-            <label htmlFor="email">E-mail*</label>
-            <input type="email" id="email" name="email" required />
+        <div className="form_size">
+          <div className="form_image_container">
+            <Title
+              text="Traga o Uri para o seu bairro, facilitando a segurança e colaboração
+            entre os moradores."
+              level={2}
+            />
 
-            <label htmlFor="telefone">Número de telefone com DDD*</label>
-            <input type="tel" id="telefone" name="telefone" required />
+            <Image
+              src="/svg/localization.svg"
+              alt="Imagem ilustrativa"
+              width={450}
+              height={450}
+            />
+          </div>
+          <div className="form_content">
+            <form>
+              <label htmlFor="nome">Nome*</label>
+              <input type="text" id="nome" name="nome" required />
 
-            <label htmlFor="cep">CEP*</label>
-            <input type="text" id="cep" name="cep" required />
+              <label htmlFor="email">E-mail*</label>
+              <input type="email" id="email" name="email" required />
 
-            <label htmlFor="rua">Rua*</label>
-            <input type="text" id="rua" name="rua" required />
+              <label htmlFor="telefone">Número de telefone com DDD*</label>
+              <input type="tel" id="telefone" name="telefone" required />
 
-            <div className="form-inline">
-              <div className="form-group">
-                <label htmlFor="numero">Número*</label>
-                <input type="text" id="numero" name="numero" required />
+              <label htmlFor="cep">CEP*</label>
+              <input type="text" id="cep" name="cep" required />
+
+              <label htmlFor="rua">Rua*</label>
+              <input type="text" id="rua" name="rua" required />
+
+              <div className="form-inline">
+                <div className="form-group">
+                  <label htmlFor="numero">Número*</label>
+                  <input type="text" id="numero" name="numero" required />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="cidade">Cidade*</label>
+                  <input type="text" id="cidade" name="cidade" required />
+                </div>
               </div>
 
-              <div className="form-group">
-                <label htmlFor="cidade">Cidade*</label>
-                <input type="text" id="cidade" name="cidade" required />
+              <div className="checkbox">
+                <input type="checkbox" id="terms" required />
+                <label htmlFor="terms" className="custom-checkbox-label">
+                  <p>
+                    Afirmo e concordo que as informações preenchidas neste
+                    formulário são verdadeiras, estou ciente que o time
+                    comercial do Uri entrará em contato.
+                  </p>
+                </label>
               </div>
-            </div>
 
-            <div className="checkbox">
-              <input type="checkbox" id="terms" required />
-              <label htmlFor="terms" className="custom-checkbox-label">
-                <p>
-                  Afirmo e concordo que as informações preenchidas neste
-                  formulário são verdadeiras, estou ciente que o time comercial
-                  do Uri entrará em contato.
-                </p>
-              </label>
-            </div>
-
-            <button type="submit">Enviar</button>
-          </form>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
-      </div>
-        
       </section>
 
       <section className="container_doubts">
-      <div className="container">
-        <div className="call_to_action">
-          <Title
-            text="Ficou com dúvidas? Nós te ajudamos"
-            level={1}
-          />
+        <div className="container">
+          <div className="call_to_action">
+            <Title text="Ficou com dúvidas? Nós te ajudamos" level={1} />
+          </div>
         </div>
-      </div>
 
-
-        {/* <Title text="Ficou com dúvidas? Nós te ajudamos" level={1} />{" "} */}
         <h2 className="text_fac_doubts"></h2>
         <Collapse title="O Uri substitui a polícia ou serviços de emergência?">
           <p>
@@ -380,43 +370,9 @@ export default function Home() {
             acontecendo na área e ajudem a manter o bairro mais seguro.
           </p>
         </Collapse>
-        {/* <div className="fac_doubts">
-          <ul>
-            <li>O Uri substitui a polícia ou serviços de emergência?</li>
-            <li>Como o Uri protege minha privacidade?</li>
-            <li>Quais tipos de incidentes posso registrar no Uri?</li>
-            <li>Quem pode ver os incidentes que eu reportar?</li>
-          </ul>
-        </div> */}
       </section>
 
-      <section className="before_footer">
-        <div className="image_bofore_footer">
-          <Image
-            src="/svg/logoWhite.svg"
-            alt="logo do uri, leao"
-            width={300}
-            height={150}
-          />
-          <p>O LEÃO DA SUA VIZINHANÇA</p>
-        </div>
-      </section>
-
-      {/* <footer>
-        <div className="footer_land">
-          <p>Contato</p>
-          <a href="https://mail.google.com/oi@uri.app" />
-
-          <p>siga Nossas Redes</p>
-
-          <Image
-            src="/svg/logoPrimary.svg"
-            alt="logo do instagram"
-            width={150}
-            height={150}
-          />
-        </div>
-      </footer> */}
+      <Footer />
     </div>
   );
 }
