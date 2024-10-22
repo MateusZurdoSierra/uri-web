@@ -8,6 +8,7 @@ import Feature from "@/components/Feature";
 import Collapse from "@/components/Collapse";
 import Title from "@/components/TitleProps";
 import Footer from "@/components/Footer";
+import Form from "@/components/Form/Form";
 
 export default function Home() {
   return (
@@ -253,49 +254,7 @@ export default function Home() {
               height={450}
             />
           </div>
-          <div className="form_content">
-            <form>
-              <label htmlFor="nome">Nome*</label>
-              <input type="text" id="nome" name="nome" required />
-
-              <label htmlFor="email">E-mail*</label>
-              <input type="email" id="email" name="email" required />
-
-              <label htmlFor="telefone">Número de telefone com DDD*</label>
-              <input type="tel" id="telefone" name="telefone" required />
-
-              <label htmlFor="cep">CEP*</label>
-              <input type="text" id="cep" name="cep" required />
-
-              <label htmlFor="rua">Rua*</label>
-              <input type="text" id="rua" name="rua" required />
-
-              <div className="form-inline">
-                <div className="form-group">
-                  <label htmlFor="numero">Número*</label>
-                  <input type="text" id="numero" name="numero" required />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="cidade">Cidade*</label>
-                  <input type="text" id="cidade" name="cidade" required />
-                </div>
-              </div>
-
-              <div className="checkbox">
-                <input type="checkbox" id="terms" required />
-                <label htmlFor="terms" className="custom-checkbox-label">
-                  <p>
-                    Afirmo e concordo que as informações preenchidas neste
-                    formulário são verdadeiras, estou ciente que o time
-                    comercial do Uri entrará em contato.
-                  </p>
-                </label>
-              </div>
-
-              <button type="submit">Enviar</button>
-            </form>
-          </div>
+          <Form />
         </div>
       </section>
 

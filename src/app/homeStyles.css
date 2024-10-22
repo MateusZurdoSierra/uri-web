@@ -462,7 +462,7 @@ form input,
 form button {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid var(--neutral300);
+  border: 1px solid var(--primary100);
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
