@@ -236,7 +236,7 @@ export default function Home() {
             </div>
             <div className="app-store-links">
               <Image
-                src="/svg/phone_download.svg"
+                src="/svg/phoneDownload.svg"
                 alt="Baixar na App Store"
                 width={350}
                 height={400}
