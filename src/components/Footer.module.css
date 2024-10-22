@@ -57,7 +57,7 @@
 
 .row_footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   max-width: 992px;
@@ -77,13 +77,13 @@
 }
 
 .footer_links a {
-  font-size: 1rem;
   color: var(--neutral0);
+  transition: transform 0.3s ease, color 0.3s;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
 .footer_links a:hover {
+  transform: scale(1.1);
   color: var(--primary500);
 }
 
@@ -100,13 +100,13 @@
 }
 
 .footer_links svg {
-  transition: transform 0.3s ease, filter 0.3s;
-  filter: var(--primary900);
+  transition: transform 0.3s ease, fill 0.3s;
+  fill: var(--primary900);
 }
 
 .footer_links svg:hover {
   transform: scale(1.1);
-  filter: var(--primary500);
+  fill: var(--primary500);
 }
 
 .footer_links svg path {
@@ -118,28 +118,43 @@
 }
 
 /* Media Queries para Responsividade */
-@media (min-width: 768px) {
-  .row_footer {
-    flex-direction: row;
+
+/* Telas grandes - Monitores */
+@media (min-width: 1200px) {
+  .container_footer {
     justify-content: space-between;
   }
 
   .footer_links {
+    flex-direction: column;
   }
 
-  .column1 {
-    gap: 2rem;
-  }
-
-  .footer_links h6 {
-    margin-bottom: 1rem;
+  .container_police ul {
+    gap: 4rem;
   }
 }
 
-@media (max-width: 767px) {
+/* Notebooks */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container_police ul {
+    gap: 3rem;
+  }
+
+  .footer_links h6 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .row_footer {
+    flex-direction: column;
+  }
+
   .container_police ul {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .footer_links {
@@ -147,8 +162,32 @@
   }
 
   .footer_links h6 {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    min-height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 767px) {
+  .row_footer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .container_police ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer_links {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer_links h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
   }
 }

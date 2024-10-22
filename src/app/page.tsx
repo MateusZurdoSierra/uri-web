@@ -94,16 +94,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container">
-        <div className="call_to_action">
-          <Title
-            text="O Uri conecta você à sua comunidade para construir um
-            ambiente mais seguro."
-            level={1}
-          />
-        </div>
-      </div>
-
       <section className="container_quaternary">
         <div className="section_block incident">
           <Image
@@ -115,14 +105,23 @@ export default function Home() {
 
           <div className="text">
             <h3>Registro de Incidentes</h3>
-            <p>Registre eventos suspeitos em segundos.</p>
+            <p>
+              Permite que você reporte ocorrências no seu bairro, como
+              atividades suspeitas, crimes, desastres naturais, e muito mais.
+              Com apenas alguns cliques, informe sua comunidade sobre o que está
+              acontecendo e ajude a manter todos em alerta.
+            </p>
           </div>
         </div>
 
         <div className="section_block notices">
           <div className="text">
             <h3>Notificações e Alertas</h3>
-            <p>Receba e compartilhe alertas de segurança.</p>
+            <p>
+              Receba alertas imediatos sobre incidentes reportados próximos a
+              você. Assim, você fica sempre atualizado sobre o que está
+              acontecendo na sua área e pode agir com rapidez quando necessário.
+            </p>
           </div>
 
           <Image
@@ -142,14 +141,24 @@ export default function Home() {
           />
           <div className="text">
             <h3>SOS de Emergência</h3>
-            <p>Ação rápida e eficaz em situações de risco.</p>
+            <p>
+              Em situações de emergência, use o botão SOS para enviar um alerta
+              instantâneo a todos os moradores do bairro. Seja um incêndio,
+              assalto ou desastre, todos ficarão informados e poderão tomar
+              medidas rápidas para se proteger.
+            </p>
           </div>
         </div>
 
         <div className="section_block invite">
           <div className="text">
             <h3>Convidar Membros</h3>
-            <p>Fortaleça a rede de proteção ao convidar vizinhos.</p>
+            <p>
+              O Uri permite que moradores se comuniquem e compartilhem
+              informações, criando uma rede de segurança colaborativa. Troque
+              mensagens, deixe comentários nos relatórios de incidentes e
+              fortaleça os laços com seus vizinhos.
+            </p>
           </div>
 
           <Image
@@ -164,11 +173,21 @@ export default function Home() {
       <div className="container">
         <div className="call_to_action">
           <Title
-            text="Feito por quem mora em casas de bairro, para quem vive fora de condomínios. Sabemos o que você enfrenta e acreditamos que, juntos, podemos tornar nossos bairros tão seguros quanto condomínios."
+            text="O Uri conecta você à sua comunidade para construir um
+            ambiente mais seguro."
             level={1}
           />
         </div>
       </div>
+
+      {/* <div className="container">
+        <div className="call_to_action">
+          <Title
+            text="Feito por quem mora em casas de bairro, para quem vive fora de condomínios. Sabemos o que você enfrenta e acreditamos que, juntos, podemos tornar nossos bairros tão seguros quanto condomínios."
+            level={1}
+          />
+        </div>
+      </div> */}
 
       <section className="container_community_security">
         <div className="community_security_content">
@@ -177,7 +196,7 @@ export default function Home() {
               <Title
                 text="A segurança começa aqui, baixe o Uri e conecte-se com sua
                 comunidade."
-                level={2}
+                level={1}
               />
 
               <p>
@@ -260,9 +279,7 @@ export default function Home() {
 
       <section className="container_doubts">
         <div className="container">
-          <div className="call_to_action">
-            <Title text="Ficou com dúvidas? Nós te ajudamos" level={1} />
-          </div>
+          <Title text="Ficou com dúvidas? Nós te ajudamos" level={2} />
         </div>
 
         <h2 className="text_fac_doubts"></h2>
