@@ -7,7 +7,7 @@
 
 .button {
   color: var(--primary900);
-  padding: 15px 20px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-bottom: 4px solid var(--primary900);
@@ -18,6 +18,8 @@
   background-color: var(--primary50);
   font-size: 1.5rem;
   transition: background-color 0.3s;
+  text-align: left;
+  gap: 10px;
 }
 
 .content {
@@ -42,15 +44,6 @@
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
-  .button {
-    font-size: 1.25rem;
-  }
-
-  .childrenText {
-    font-size: 0.875rem;
-  }
-}
 
 /* Classes para controle de estado */
 .collapsed {
@@ -67,4 +60,14 @@
 .rotate {
   transform: rotate(180deg);
   transition: transform 0.3s ease-out;
+}
+@media (max-width: 600px) {
+  .button {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .childrenText {
+    font-size: 0.875rem;
+  }
 }

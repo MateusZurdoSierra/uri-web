@@ -47,103 +47,105 @@ const Form: React.FC = () => {
   };
 
   return (
-    <div className="form_content">
-      <form onSubmit={handleSubmit} method="POST">
-        <label htmlFor="nome">Nome*</label>
-        <input
-          type="text"
-          id="nome"
-          name="nome"
-          value={name}
-          onChange={(text) => setName(text.target.value)}
-          required
-        />
-
-        <label htmlFor="email">E-mail*</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          onChange={(text) => setEmail(text.target.value)}
-          required
-        />
-
-        <label htmlFor="telefone">Número de telefone com DDD*</label>
-        <input
-          type="tel"
-          id="telefone"
-          name="telefone"
-          value={phone}
-          onChange={(text) => setPhone(text.target.value)}
-          required
-        />
-
-        <label htmlFor="cep">CEP*</label>
-        <input
-          type="text"
-          id="cep"
-          name="cep"
-          value={zipCode}
-          onChange={(text) => setZipCode(text.target.value)}
-          required
-        />
-
-        <label htmlFor="rua">Rua*</label>
-        <input
-          type="text"
-          id="rua"
-          name="rua"
-          value={street}
-          onChange={(text) => setStreet(text.target.value)}
-          required
-        />
-
-        <div className="form-inline">
-          <div className="form-group">
-            <label htmlFor="numero">Número*</label>
-            <input
-              type="text"
-              id="numero"
-              name="numero"
-              value={number}
-              onChange={(text) => setNumber(text.target.value)}
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="cidade">Cidade*</label>
-            <input
-              type="text"
-              id="cidade"
-              name="cidade"
-              value={city}
-              onChange={(text) => setCity(text.target.value)}
-              required
-            />
-          </div>
-        </div>
-
-        <div className="checkbox">
+    <div className="form_component">
+      <div className="form_content">
+        <form onSubmit={handleSubmit} method="POST">
+          <label htmlFor="nome">Nome*</label>
           <input
-            type="checkbox"
-            id="terms"
-            checked={terms}
-            onChange={(check) => setTerms(check.target.checked)}
+            type="text"
+            id="nome"
+            name="nome"
+            value={name}
+            onChange={(text) => setName(text.target.value)}
             required
           />
-          <label htmlFor="terms" className="custom-checkbox-label">
-            <p>
-              Afirmo e concordo que as informações preenchidas neste formulário
-              são verdadeiras, estou ciente que o time comercial do Uri entrará
-              em contato.
-            </p>
-          </label>
-        </div>
 
-        <button type="submit">Enviar</button>
-      </form>
+          <label htmlFor="email">E-mail*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={(text) => setEmail(text.target.value)}
+            required
+          />
+
+          <label htmlFor="telefone">Número de telefone com DDD*</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            value={phone}
+            onChange={(text) => setPhone(text.target.value)}
+            required
+          />
+
+          <label htmlFor="cep">CEP*</label>
+          <input
+            type="text"
+            id="cep"
+            name="cep"
+            value={zipCode}
+            onChange={(text) => setZipCode(text.target.value)}
+            required
+          />
+
+          <label htmlFor="rua">Rua*</label>
+          <input
+            type="text"
+            id="rua"
+            name="rua"
+            value={street}
+            onChange={(text) => setStreet(text.target.value)}
+            required
+          />
+
+          <div className="form-inline">
+            <div className="form-group">
+              <label htmlFor="numero">Número*</label>
+              <input
+                type="text"
+                id="numero"
+                name="numero"
+                value={number}
+                onChange={(text) => setNumber(text.target.value)}
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="cidade">Cidade*</label>
+              <input
+                type="text"
+                id="cidade"
+                name="cidade"
+                value={city}
+                onChange={(text) => setCity(text.target.value)}
+                required
+              />
+            </div>
+          </div>
+
+          <div className="checkbox">
+            <input
+              type="checkbox"
+              id="terms"
+              checked={terms}
+              onChange={(check) => setTerms(check.target.checked)}
+              required
+            />
+            <label htmlFor="terms" className="custom-checkbox-label">
+              <p>
+                Afirmo e concordo que as informações preenchidas neste
+                formulário são verdadeiras, estou ciente que o time comercial do
+                Uri entrará em contato.
+              </p>
+            </label>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </div>
   );
 };

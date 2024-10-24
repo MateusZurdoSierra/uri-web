@@ -1,0 +1,41 @@
+.menuContainer {
+  position: relative; /* Para posicionar o menu */
+}
+
+.menuButton {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu {
+  position: absolute;
+  top: 40px; /* Ajuste a posição conforme necessário */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Para garantir que o menu fique acima de outros elementos */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li:hover {
+  background-color: #f0f0f0; /* Efeito de hover */
+}

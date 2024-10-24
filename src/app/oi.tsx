@@ -65,37 +65,30 @@ export default function Home() {
 
       <Feature />
 
-      <section
-        className="section-unique-uri"
-        aria-labelledby="unique-uri-title"
-      >
-        <div className="unique-uri-container">
-          <div className="unique-uri-horizontal-box">
-            <article className="unique-uri-content">
-              <figure className="unique-uri-image-text-overlay">
-                <Image
-                  src="/svg/person.svg"
-                  alt="Jovem caminhando ao parque"
-                  className="unique-uri-image"
-                  width={450}
-                  height={650}
-                />
-                <figcaption className="unique-uri-text-overlay">
-                  <h2 id="unique-uri-title" className="unique-uri-title">
-                    O que torna <br /> o <span>Uri</span> único?
-                  </h2>
-                  <p className="unique-uri-description-text">
-                    Nosso propósito é provar que a segurança começa com a
-                    colaboração. Queremos transformar bairros em comunidades
-                    unidas, onde cada pessoa faz a diferença.
-                  </p>
-                  <a href="#app" className="unique-uri-cta-link">
-                    Conheça o nosso app &rarr;
-                  </a>
-                </figcaption>
-              </figure>
-            </article>
-          </div>
+      <section className="container_tertiary">
+        <h2 className="unique-uri-title" id="unique-uri-title">
+          O que torna <br /> o <span>Uri</span> único?
+        </h2>
+        <div className="horizontal_box">
+          <figure className="image_text_overlay">
+            <Image
+              src="/svg/person.svg"
+              alt="Jovem caminhando ao parque"
+              className="image"
+              width={450}
+              height={650}
+            />
+            <figcaption className="text_overlay">
+              <p className="text">
+                Nosso propósito é provar que a segurança começa com a
+                colaboração. Queremos transformar bairros em comunidades unidas,
+                onde cada pessoa faz a diferença.
+              </p>
+              <a href="#app" className="cta_link">
+                Conheça o nosso app &rarr;
+              </a>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -264,35 +257,32 @@ export default function Home() {
       </section>
 
       <section className="container_form_section">
-        
-          {/* <div className="curves_background_two">
+        <div className="curves_background_two">
           <Image
             src="/svg/curvesTwo.svg"
             alt="Ilustração de segurança"
             width={2000}
             height={1700}
           />
-        </div> */}
+        </div>
 
-          <div className="form_size">
-            <div className="form_image_container">
-              <Title
-                text="Traga o Uri para o seu bairro, facilitando a segurança e colaboração
+        <div className="form_size">
+          <div className="form_image_container">
+            <Title
+              text="Traga o Uri para o seu bairro, facilitando a segurança e colaboração
             entre os moradores."
-                level={2}
-              />
+              level={2}
+            />
 
-              <Image
-                src="/svg/localization.svg"
-                alt="Imagem ilustrativa"
-                width={350}
-                height={350}
-              />
-            </div>
-
-            <Form />
+            <Image
+              src="/svg/localization.svg"
+              alt="Imagem ilustrativa"
+              width={450}
+              height={450}
+            />
           </div>
-      
+          <Form />
+        </div>
       </section>
 
       <section className="container_doubts">
