@@ -9,18 +9,19 @@ import Collapse from "@/components/Collapse/Collapse";
 import Title from "@/components/TitleProps";
 import Footer from "@/components/Footer/Footer";
 import Form from "@/components/Form/Form";
+import CommunityConnection from "@/components/CommunityConnection/CommunityConnection";
 
 export default function Home() {
   return (
     <div>
-      <div className="curves_background">
+      {/* <div className="curves_background">
         <Image
           src="/svg/curvesPrimary.svg"
           alt="Ilustração de segurança"
           width={1050}
           height={750}
         />
-      </div>
+      </div> */}
 
       <Header />
 
@@ -42,25 +43,23 @@ export default function Home() {
           </div>
           <div className="content-right">
             <Image
-              src="/svg/social.svg"
+              src="/svg/social2.svg"
               alt="Ilustração de segurança"
-              width={450}
-              height={350}
+              width={650}
+              height={550}
             />
           </div>
         </div>
       </section>
 
-      <div className="container">
-        <div className="call_to_action">
-          <Title
+      <div className="Community_Connection">
+        <div className="Community_Connection_content">
+          <CommunityConnection
             text="Fortaleça a segurança do seu bairro com a colaboração dos
             seus vizinhos."
-            level={1}
           />
-
-          <FontAwesomeIcon icon={faChevronDown} className="icon" />
         </div>
+        <FontAwesomeIcon icon={faChevronDown} className="icon" />
       </div>
 
       <Feature />
@@ -74,11 +73,11 @@ export default function Home() {
             <article className="unique-uri-content">
               <figure className="unique-uri-image-text-overlay">
                 <Image
-                  src="/svg/person.svg"
+                  src="/svg/SocialDistancing.svg"
                   alt="Jovem caminhando ao parque"
                   className="unique-uri-image"
-                  width={450}
-                  height={650}
+                  width={850}
+                  height={750}
                 />
                 <figcaption className="unique-uri-text-overlay">
                   <h2 id="unique-uri-title" className="unique-uri-title">
@@ -183,13 +182,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container">
-        <div className="call_to_action">
-          <Title
-            text="O Uri conecta você à sua comunidade para construir um
-            ambiente mais seguro."
-            level={1}
-          />
+      <div className="Community_Connection">
+        <div className="Community_Connection_content">
+          <CommunityConnection text="O Uri conecta você à sua comunidade para construir um ambiente mais seguro." />
         </div>
       </div>
 
@@ -204,68 +199,65 @@ export default function Home() {
 
       <section className="container_community_security">
         <div className="community_security_content">
-          <div className="test-responsivo">
-            <div className="left_block_security">
-              <div className="text_block_security">
-                <Title
-                  text="A segurança começa aqui, baixe o Uri e conecte-se com sua
+          <div className="left_block_security">
+            <div className="text_block_security">
+              <Title
+                text="A segurança começa aqui, baixe o Uri e conecte-se com sua
                 comunidade."
-                  level={1}
-                />
+                level={1}
+              />
 
-                <p>
-                  Juntos, relatamos ocorrências, cuidamos uns dos outros e
-                  fazemos do nosso bairro um lugar melhor para viver. Tudo de
-                  forma simples e gratuita.
-                </p>
-                <div className="app_buttons">
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.seuapp.android"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/svg/GetItOnGooglePlayBadge.png"
-                      alt="Baixar na Google Play"
-                      width={150}
-                      height={100}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </a>
+              <p>
+                Juntos, relatamos ocorrências, cuidamos uns dos outros e fazemos
+                do nosso bairro um lugar melhor para viver. Tudo de forma
+                simples e gratuita.
+              </p>
+              <div className="app_buttons">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.seuapp.android"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/svg/GetItOnGooglePlayBadge.png"
+                    alt="Baixar na Google Play"
+                    width={150}
+                    height={100}
+                    style={{ objectFit: "contain" }}
+                  />
+                </a>
 
-                  <a
-                    href="https://apps.apple.com/us/app/id1234567890"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/svg/AppStoreBadge.svg"
-                      alt="Baixar na App Store"
-                      width={150}
-                      height={100}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </a>
-                </div>
+                <a
+                  href="https://apps.apple.com/us/app/id1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/svg/AppStoreBadge.svg"
+                    alt="Baixar na App Store"
+                    width={150}
+                    height={100}
+                    style={{ objectFit: "contain" }}
+                  />
+                </a>
               </div>
-              <div className="app-store-links">
-                <Image
-                  src="/svg/phoneDownload.svg"
-                  alt="Baixar na App Store"
-                  width={350}
-                  height={400}
-                  quality={100} // Para garantir a melhor qualidade de imagem
-                  objectFit="contain" // Mantém a proporção da imagem
-                />
-              </div>
+            </div>
+            <div className="app-store-links">
+              <Image
+                src="/svg/phoneDownload.svg"
+                alt="Baixar na App Store"
+                width={350}
+                height={400}
+                quality={100} // Para garantir a melhor qualidade de imagem
+                objectFit="contain" // Mantém a proporção da imagem
+              />
             </div>
           </div>
         </div>
       </section>
 
       <section className="container_form_section">
-        
-          {/* <div className="curves_background_two">
+        {/* <div className="curves_background_two">
           <Image
             src="/svg/curvesTwo.svg"
             alt="Ilustração de segurança"
@@ -274,96 +266,98 @@ export default function Home() {
           />
         </div> */}
 
-          <div className="form_size">
-            <div className="form_image_container">
-              <Title
-                text="Traga o Uri para o seu bairro, facilitando a segurança e colaboração
+        <div className="form_size">
+          <div className="form_image_container">
+            <Title
+              text="Traga o Uri para o seu bairro, facilitando a segurança e colaboração
             entre os moradores."
-                level={2}
-              />
+              level={2}
+            />
 
-              <Image
-                src="/svg/localization.svg"
-                alt="Imagem ilustrativa"
-                width={350}
-                height={350}
-              />
-            </div>
-
-            <Form />
+            <Image
+              src="/svg/localization.svg"
+              alt="Imagem ilustrativa"
+              width={350}
+              height={350}
+            />
           </div>
-      
+
+          <Form />
+        </div>
       </section>
 
-      <section className="container_doubts">
-        <div className="container">
-          <Title text="Ficou com dúvidas? Nós te ajudamos" level={2} />
-        </div>
-
-        <h2 className="text_fac_doubts"></h2>
-        <Collapse title="O Uri substitui a polícia ou serviços de emergência?">
-          <p>
-            Não. <strong>O Uri é uma ferramenta de apoio</strong> que fortalece
-            a colaboração entre moradores, ajudando a identificar e compartilhar
-            informações sobre incidentes no bairro. No entanto, em situações
-            graves, como crimes ou emergências médicas, é essencial acionar as
-            autoridades competentes, como a polícia ou os bombeiros.
-          </p>
-        </Collapse>
-        <Collapse title="Como o Uri protege minha privacidade?">
-          <p>
-            <strong>A sua privacidade é nossa prioridade.</strong> No Uri,
-            implementamos rigorosas medidas de segurança para proteger seus
-            dados pessoais. As informações compartilhadas são criptografadas, e
-            você tem o controle sobre o que deseja ou não compartilhar.
-          </p>
-        </Collapse>
-        <Collapse title="Quais tipos de incidentes posso registrar no Uri?">
-          <div>
-            <p>
-              No Uri, você pode registrar diversos tipos de incidentes para
-              manter sua comunidade informada e segura. Aqui estão alguns
-              exemplos:
-            </p>
-            <ul>
-              <li>
-                <strong> Atividade suspeita: </strong>Movimentações incomuns ou
-                comportamentos suspeitos no bairro.
-              </li>
-              <li>
-                <strong>Roubo ou assalto:</strong> Relatos de crimes contra
-                propriedades ou pessoas.
-              </li>
-              <li>
-                <strong>Incêndio:</strong> Focos de incêndio em áreas
-                residenciais ou comerciais.
-              </li>
-              <li>
-                {" "}
-                <strong>Vandalismo:</strong> Danos a bens públicos ou privados.
-              </li>
-              <li>
-                <strong>Inundações ou desastres naturais:</strong> Situações de
-                emergência causadas por condições climáticas.
-              </li>
-              <li>
-                <strong>Animais perdidos ou encontrados:</strong> Avisos sobre
-                animais domésticos fora de lugar.
-              </li>
-            </ul>
+      <section className="container_doubts_out">
+        <div className="container_doubts">
+          <div className="title_collapse">
+            <Title text="Ficou com dúvidas? Nós te ajudamos" level={2} />
           </div>
-        </Collapse>
-        <Collapse title="Quem pode ver os incidentes que eu reportar?">
-          <p>
-            Os incidentes que você reportar no Uri{" "}
-            <strong>
-              são visíveis para todos os moradores que fazem parte do seu
-              bairro.
-            </strong>
-            Isso permite que os vizinhos fiquem informados sobre o que está
-            acontecendo na área e ajudem a manter o bairro mais seguro.
-          </p>
-        </Collapse>
+          <h2 className="text_fac_doubts"></h2>
+          <Collapse title="O Uri substitui a polícia ou serviços de emergência?">
+            <p>
+              Não. <strong>O Uri é uma ferramenta de apoio</strong> que
+              fortalece a colaboração entre moradores, ajudando a identificar e
+              compartilhar informações sobre incidentes no bairro. No entanto,
+              em situações graves, como crimes ou emergências médicas, é
+              essencial acionar as autoridades competentes, como a polícia ou os
+              bombeiros.
+            </p>
+          </Collapse>
+          <Collapse title="Como o Uri protege minha privacidade?">
+            <p>
+              <strong>A sua privacidade é nossa prioridade.</strong> No Uri,
+              implementamos rigorosas medidas de segurança para proteger seus
+              dados pessoais. As informações compartilhadas são criptografadas,
+              e você tem o controle sobre o que deseja ou não compartilhar.
+            </p>
+          </Collapse>
+          <Collapse title="Quais tipos de incidentes posso registrar no Uri?">
+            <div>
+              <p>
+                No Uri, você pode registrar diversos tipos de incidentes para
+                manter sua comunidade informada e segura. Aqui estão alguns
+                exemplos:
+              </p>
+              <ul>
+                <li>
+                  <strong> Atividade suspeita: </strong>Movimentações incomuns
+                  ou comportamentos suspeitos no bairro.
+                </li>
+                <li>
+                  <strong>Roubo ou assalto:</strong> Relatos de crimes contra
+                  propriedades ou pessoas.
+                </li>
+                <li>
+                  <strong>Incêndio:</strong> Focos de incêndio em áreas
+                  residenciais ou comerciais.
+                </li>
+                <li>
+                  {" "}
+                  <strong>Vandalismo:</strong> Danos a bens públicos ou
+                  privados.
+                </li>
+                <li>
+                  <strong>Inundações ou desastres naturais:</strong> Situações
+                  de emergência causadas por condições climáticas.
+                </li>
+                <li>
+                  <strong>Animais perdidos ou encontrados:</strong> Avisos sobre
+                  animais domésticos fora de lugar.
+                </li>
+              </ul>
+            </div>
+          </Collapse>
+          <Collapse title="Quem pode ver os incidentes que eu reportar?">
+            <p>
+              Os incidentes que você reportar no Uri{" "}
+              <strong>
+                são visíveis para todos os moradores que fazem parte do seu
+                bairro.
+              </strong>
+              Isso permite que os vizinhos fiquem informados sobre o que está
+              acontecendo na área e ajudem a manter o bairro mais seguro.
+            </p>
+          </Collapse>
+        </div>
       </section>
 
       <Footer />

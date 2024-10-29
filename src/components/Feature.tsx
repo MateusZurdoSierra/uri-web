@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Feature: React.FC = () => {
   return (
     <section className="container_secondary">
-      <div className="container_medium_box">
+      {/* <div className="container_medium_box"> */}
         <div className="container_box">
           <div className="container_security_text">
             <div className="text_left">
@@ -63,7 +63,7 @@ const Feature: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };

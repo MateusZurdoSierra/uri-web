@@ -1,21 +1,21 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link'; 
-import styles from './Header.module.css'; // Certifique-se de criar e definir este arquivo de CSS
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./Header.module.css"; // Certifique-se de criar e definir este arquivo de CSS
 
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <Image
-          src="/svg/logoPrimary.svg" 
+          src="/svg/logoPrimary.svg"
           alt="Logo URI"
           className={styles.logo}
           width={90}
           height={150}
         />
 
-        <nav>
+        {/* <nav>
           <ul className={styles.navLinks}>
             <li>
               <Link href="/about">Sobre o Uri</Link>
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
               <Link href="/contact">Contatos</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );
