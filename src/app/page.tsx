@@ -286,7 +286,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container_doubts_out">
+      <section>
         <div className="container_doubts">
           <div className="title_collapse">
             <Title text="Ficou com dúvidas? Nós te ajudamos" level={2} />

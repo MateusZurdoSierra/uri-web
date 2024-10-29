@@ -75,12 +75,9 @@ body {
 }
 
 .content-left p {
-  /* Corrigido de content-lef para content-left */
   font-size: 1rem;
   line-height: 1rem;
 }
-
-//////////////////////////////////////////////
 
 .container {
   display: flex;
@@ -196,41 +193,41 @@ body {
 .feature_item p {
   font-size: 0.675rem;
 }
-///////////////////////////////
+
 .section-unique-uri {
   display: flex;
-  margin: 2rem auto; /* Margem em torno da seção */
+  margin: 2rem auto;
   justify-content: center;
   align-items: stretch;
   flex-direction: column;
-  height: auto; /* Flexibilidade na altura */
-  max-width: 1200px; /* Limite de largura */
-  padding: 2rem; /* Preenchimento interno */
+  height: auto;
+  max-width: 1200px;
+  padding: 2rem;
 }
 
 .unique-uri-container {
   display: flex;
-  margin: 2rem auto; /* Margem em torno da seção */
+  margin: 2rem auto;
   justify-content: center;
   align-items: stretch;
   flex-direction: column;
-  min-height: 700px; /* Flexibilidade na altura */
+  min-height: 700px;
 }
 
 .unique-uri-title {
-  font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
-  color: var(--neutral900); /* Cor do texto */
+  font-size: 3rem;
+  color: var(--neutral900);
 }
 
 .unique-uri-horizontal-box {
   width: 100%;
-  height: 400px; /* Permite ajuste automático conforme o conteúdo */
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 1rem; /* Adiciona preenchimento interno */
-  margin: 1rem 0; /* Margem vertical para separar do conteúdo adjacente */
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
 .unique-uri-image-text-overlay {
@@ -250,14 +247,14 @@ body {
 }
 
 .unique-uri-image {
-  width: 100%; /* Ajusta a largura da imagem conforme necessário */
-  max-width: 450px; /* Limita a largura máxima */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%;
+  max-width: 450px;
+  height: auto;
 }
 
 .unique-uri-text-overlay {
   width: 40%;
-  height: auto; /* Mudado para auto para melhor responsividade */
+  height: auto;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -268,7 +265,7 @@ body {
   display: flex;
   text-align: left;
   flex: 1;
-  margin: 0; /* Remove margem padrão */
+  margin: 0;
 }
 
 .unique-uri-cta-link {
@@ -276,8 +273,6 @@ body {
   color: var(--primary900);
   font-weight: 500;
 }
-
-///////// Features two /////////////////
 
 .container_quaternary {
   width: 100%;
@@ -308,13 +303,13 @@ body {
 }
 
 .figure_app_uri {
-  width: 100%; /* Faz com que a figura ocupe toda a largura disponível */
-  max-width: 500px; /* Define um limite máximo de largura */
+  width: 100%;
+  max-width: 500px;
 }
 
 .figure_app_uri img {
-  width: 100%; /* Faz com que a imagem ocupe toda a largura do elemento figure */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%;
+  height: auto;
 }
 
 .section_block .text {
@@ -347,10 +342,6 @@ body {
   width: 100%;
   max-width: 1200px;
 }
-
-/* .test-responsivo {
-  padding: 4rem;
-} */
 
 .left_block_security {
   display: flex;
@@ -438,7 +429,6 @@ body {
   flex-direction: column;
   width: 50%;
 }
-/*  */
 
 .text_block_form {
   text-align: right;
@@ -548,12 +538,12 @@ form label {
   transition: background-color 0.2s ease;
 }
 
-.checkbox input[type="checkbox"]:checked + .custom-checkbox-label::before {
+.checkbox input[type="checkbox"]:checked+.custom-checkbox-label::before {
   background-color: var(--primary900);
   border-color: var(--primary900);
 }
 
-.checkbox input[type="checkbox"]:checked + .custom-checkbox-label::after {
+.checkbox input[type="checkbox"]:checked+.custom-checkbox-label::after {
   content: "";
   position: absolute;
   left: 8px;
@@ -596,8 +586,6 @@ form button:hover {
   color: var(--primary900);
 }
 
-///////////////   FAQ   /////////////////////
-
 .container_doubts {
   width: 100%;
 }
@@ -615,6 +603,7 @@ form button:hover {
   margin: 2rem auto;
   color: var(--primary900);
 }
+
 .text_fac_doubts {
   text-align: center;
   margin-bottom: 20px;
@@ -660,45 +649,40 @@ form button:hover {
 }
 
 @media (max-width: 1200px) {
-  //////////////////////////////////////////////
-  ///////////////Main/////////////////////////
-  //////////////////////////////////////////////
   .main_content {
     display: flex;
-    height: auto; /* Permite que a altura se ajuste automaticamente */
-    padding: 2rem 1rem; /* Reduz o padding */
+    height: auto;
+    padding: 2rem 1rem;
     width: 100%;
-    max-width: 90vw; /* Define a largura máxima */
+    max-width: 90vw;
     margin: 1rem auto;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: row; /* Mantém a direção da flex para telas maiores */
+    flex-direction: row;
   }
 
   .content-left {
-    width: 50%; /* Faz com que ocupe 50% da largura */
-    margin-bottom: 0rem; /* Sem espaço entre as seções */
+    width: 50%;
+    margin-bottom: 0rem;
   }
 
   .content-right {
-    width: 40%; /* Mantém a largura do conteúdo à direita */
+    width: 40%;
     margin-bottom: 0rem;
   }
 
   .content-right img {
     width: 400px;
-    height: 400px; /* Mantém o tamanho fixo da imagem */
+    height: 400px;
   }
 
   .content-left h1 {
-    font-size: 2.5rem; /* Ajusta o tamanho do título */
+    font-size: 2.5rem;
   }
 
   .content-left p {
-    font-size: 0.875rem; /* Ajusta o tamanho do texto */
+    font-size: 0.875rem;
   }
-
-  //////////////////////////
 
   .Community_Connection {
     display: flex;
@@ -716,10 +700,6 @@ form button:hover {
     flex-direction: column;
     color: var(--primary900);
   }
-
-  //////////////////////////////////////////////
-  ///////////////FEATURES///////////////////////
-  //////////////////////////////////////////////
 
   .container_secondary {
     width: 100%;
@@ -761,7 +741,7 @@ form button:hover {
     display: flex;
     flex-direction: column;
     width: 50%;
-    align-items: start; /* Corrigido de align-item para align-items */
+    align-items: start;
   }
 
   .container_secondary h3 {
@@ -781,10 +761,10 @@ form button:hover {
 
   .features {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    gap: 1rem; /* Espaço entre os itens */
+    flex-wrap: wrap;
+    gap: 1rem;
     align-items: center;
-    justify-content: center; /* Centraliza os itens */
+    justify-content: center;
     width: 100%;
   }
 
@@ -792,8 +772,8 @@ form button:hover {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    width: calc(50% - 1rem); /* Cada item ocupa 50% menos a metade do gap */
-    max-width: 300px; /* Ajustado para 300px para largura máxima */
+    width: calc(50% - 1rem);
+    max-width: 300px;
   }
 
   .icon_feature {
@@ -810,44 +790,40 @@ form button:hover {
     font-size: 0.875rem;
   }
 
-  //////////////////////////////////////////////
-  ///////////////UNIQUE///////////////////////
-  //////////////////////////////////////////////
-
   .section-unique-uri {
     display: flex;
-    margin: 2rem auto; /* Margem em torno da seção */
+    margin: 2rem auto;
     justify-content: center;
     align-items: stretch;
     flex-direction: column;
-    height: auto; /* Flexibilidade na altura */
-    max-width: 100vw; /* Limite de largura */
-    padding: 2rem; /* Preenchimento interno */
+    height: auto;
+    max-width: 100vw;
+    padding: 2rem;
   }
 
   .unique-uri-container {
     display: flex;
-    margin: 2rem auto; /* Margem em torno da seção */
+    margin: 2rem auto;
     justify-content: center;
     align-items: stretch;
     flex-direction: column;
-    min-height: 700px; /* Flexibilidade na altura */
+    min-height: 700px;
   }
 
   .unique-uri-title {
-    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
-    color: var(--neutral900); /* Cor do texto */
+    font-size: 3rem;
+    color: var(--neutral900);
   }
 
   .unique-uri-horizontal-box {
     width: 100%;
-    height: 400px; /* Permite ajuste automático conforme o conteúdo */
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 1rem; /* Adiciona preenchimento interno */
-    margin: 1rem 0; /* Margem vertical para separar do conteúdo adjacente */
+    padding: 1rem;
+    margin: 1rem 0;
   }
 
   .unique-uri-image-text-overlay {
@@ -867,20 +843,16 @@ form button:hover {
   }
 
   .unique-uri-image {
-    width: 100%; /* Ajusta a largura da imagem conforme necessário */
-    max-width: 350px; /* Limita a largura máxima */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    max-width: 350px;
+    height: auto;
   }
 }
 
 @media (max-width: 1024px) {
-  //////////////////////////////////////////////
-  ///////////////Main///////////////////////
-  //////////////////////////////////////////////
   .main_content {
-    /* Altera para coluna em telas menores */
-    height: 100%; /* Permite que a altura se ajuste automaticamente */
-    padding: 2rem 1rem; /* Reduz o padding */
+    height: 100%;
+    padding: 2rem 1rem;
     width: 100%;
   }
 
@@ -896,13 +868,13 @@ form button:hover {
   }
 
   .content-left {
-    width: 50%; /* Faz com que ambos ocupem a largura total */
-    margin-bottom: 0rem; /* Adiciona espaço entre as seções */
+    width: 50%;
+    margin-bottom: 0rem;
   }
 
   .content-right {
-    width: 40%; /* Faz com que ambos ocupem a largura total */
-    margin-bottom: 0rem; /* Adiciona espaço entre as seções */
+    width: 40%;
+    margin-bottom: 0rem;
   }
 
   .content-right img {
@@ -911,14 +883,12 @@ form button:hover {
   }
 
   .content-left h1 {
-    font-size: 2.5rem; /* Ajusta o tamanho do título para telas menores */
+    font-size: 2.5rem;
   }
 
   .content-left p {
-    font-size: 0.875rem; /* Ajusta o tamanho do texto para telas menores */
+    font-size: 0.875rem;
   }
-
-  //////////////////////////
 
   .Community_Connection {
     display: flex;
@@ -936,10 +906,6 @@ form button:hover {
     flex-direction: column;
     color: var(--primary900);
   }
-
-  //////////////////////////////////////////////
-  ///////////////FEATURES///////////////////////
-  //////////////////////////////////////////////
 
   .container_secondary {
     width: 100%;
@@ -981,7 +947,7 @@ form button:hover {
     display: flex;
     flex-direction: column;
     width: 50%;
-    align-item: start;
+    align-items: start;
   }
 
   .container_secondary h3 {
@@ -1001,22 +967,20 @@ form button:hover {
 
   .features {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    gap: 1rem; /* Espaço entre os itens */
+    flex-wrap: wrap;
+    gap: 1rem;
     align-items: center;
-    justify-content: center; /* Centraliza os itens */
+    justify-content: center;
     width: 100%;
   }
 
   .feature_item {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+
     padding: 1rem;
-    width: calc(
-      50% - 1rem
-    ); /* Cada item ocupa 50% da largura menos a metade do gap */
-    max-width: 300vw; /* Se necessário, ajuste essa largura */
+    width: calc(50% - 1rem);
+    max-width: 300vw;
   }
 
   .icon_feature {
@@ -1033,44 +997,40 @@ form button:hover {
     font-size: 0.875rem;
   }
 
-  //////////////////////////////////////////////
-  ///////////////UNIQUE///////////////////////
-  //////////////////////////////////////////////
-
   .section-unique-uri {
     display: flex;
-    margin: 2rem auto; /* Margem em torno da seção */
+    margin: 2rem auto;
     justify-content: center;
     align-items: stretch;
     flex-direction: column;
-    height: auto; /* Flexibilidade na altura */
-    max-width: 100vw; /* Limite de largura */
-    padding: 2rem; /* Preenchimento interno */
+    height: auto;
+    max-width: 100vw;
+    padding: 2rem;
   }
 
   .unique-uri-container {
     display: flex;
-    margin: 2rem auto; /* Margem em torno da seção */
+    margin: 2rem auto;
     justify-content: center;
     align-items: stretch;
     flex-direction: column;
-    min-height: 700px; /* Flexibilidade na altura */
+    min-height: 700px;
   }
 
   .unique-uri-title {
-    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
-    color: var(--neutral900); /* Cor do texto */
+    font-size: 3rem;
+    color: var(--neutral900);
   }
 
   .unique-uri-horizontal-box {
     width: 100%;
-    height: 400px; /* Permite ajuste automático conforme o conteúdo */
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 1rem; /* Adiciona preenchimento interno */
-    margin: 1rem 0; /* Margem vertical para separar do conteúdo adjacente */
+    padding: 1rem;
+    margin: 1rem 0;
   }
 
   .unique-uri-image-text-overlay {
@@ -1090,14 +1050,10 @@ form button:hover {
   }
 
   .unique-uri-image {
-    width: 100%; /* Ajusta a largura da imagem conforme necessário */
-    max-width: 350px; /* Limita a largura máxima */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    max-width: 350px;
+    height: auto;
   }
-
-  //////////////////////////////////////////////
-  ///////////////FEATURE 2///////////////////////
-  //////////////////////////////////////////////
 
   .container_quaternary {
     width: 100%;
@@ -1156,12 +1112,6 @@ form button:hover {
     width: 100%;
   }
 
-
-  
-  //////////////////////////////////////////////
-  ///////////////Form ///////////////////////
-  //////////////////////////////////////////////
-
   .container_form_section {
     width: 100%;
   }
@@ -1213,6 +1163,7 @@ form button:hover {
   .form_content {
     width: 100%;
   }
+
   .text_block_form {
     text-align: right;
     flex: 1;
@@ -1226,8 +1177,8 @@ form button:hover {
 
   .form_image_container {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     padding: 1rem;
@@ -1235,9 +1186,9 @@ form button:hover {
   }
 
   .form_image_container img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: contain; /* Ajusta a imagem para caber no contêiner sem distorção */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .form_image_container h2 {
@@ -1331,12 +1282,12 @@ form button:hover {
     transition: background-color 0.2s ease;
   }
 
-  .checkbox input[type="checkbox"]:checked + .custom-checkbox-label::before {
+  .checkbox input[type="checkbox"]:checked+.custom-checkbox-label::before {
     background-color: var(--primary900);
     border-color: var(--primary900);
   }
 
-  .checkbox input[type="checkbox"]:checked + .custom-checkbox-label::after {
+  .checkbox input[type="checkbox"]:checked+.custom-checkbox-label::after {
     content: "";
     position: absolute;
     left: 8px;
@@ -1359,14 +1310,6 @@ form button:hover {
   form button:hover {
     background-color: var(--primary500);
   }
-
-
-
-
-
-
-
-
 }
 
 @media (max-width: 768px) {
@@ -1416,12 +1359,8 @@ form button:hover {
   }
 
   .curves_background {
-    display: none; /* Esconde o fundo curvo em telas menores */
+    display: none;
   }
-
-  //////////////////////////////////////////////
-  ///////////////FEATURES///////////////////////
-  //////////////////////////////////////////////
 
   .icon {
     width: 2.5rem;
@@ -1440,13 +1379,13 @@ form button:hover {
   }
 
   .container_box {
-    margin: 2rem auto; /* Margin ajustado para centralizar */
-    padding: 1.5rem; /* Padding reduzido para telas pequenas */
+    margin: 2rem auto;
+    padding: 1.5rem;
     background-color: var(--neutral0);
     border-radius: 1rem;
-    width: 90vw; /* Largura relativa para se ajustar à tela */
-    max-width: 90vw; /* Largura máxima definida */
-    height: auto; /* Altura ajustável */
+    width: 90vw;
+    max-width: 90vw;
+    height: auto;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -1531,51 +1470,45 @@ form button:hover {
     text-align: center;
   }
 
-  //////////////////////////////////////////////
-  ///////////////UNIQUE///////////////////////
-  //////////////////////////////////////////////
-
   .container_tertiary {
-    height: auto; /* Permite que a altura se ajuste ao conteúdo */
-    padding: 2rem; /* Adiciona padding em telas menores */
+    height: auto;
+    padding: 2rem;
   }
 
   .horizontal_box {
-    height: auto; /* Permite que a altura se ajuste ao conteúdo */
-    flex-direction: column; /* Altera a direção em telas menores */
+    height: auto;
+    flex-direction: column;
   }
 
   .image_text_overlay {
-    width: 100%; /* Largura total em telas menores */
+    width: 100%;
   }
 
   .text_overlay {
-    width: 100%; /* Largura total em telas menores */
+    width: 100%;
   }
 
   .container_tertiary h2 {
-    font-size: 1.5rem; /* Tamanho menor para dispositivos móveis */
+    font-size: 1.5rem;
   }
 
   .container_tertiary p {
-    font-size: 1rem; /* Tamanho menor para dispositivos móveis */
-  }
-
-  ///////////////////////////////////////////
-
-  .section-unique-uri {
-    display: flex;
+    font-size: 1rem;
   }
 
   .section-unique-uri {
     display: flex;
-    margin: 1rem auto; /* Margem em torno da seção */
+  }
+
+  .section-unique-uri {
+    display: flex;
+    margin: 1rem auto;
     justify-content: center;
     align-items: stretch;
     flex-direction: column;
-    height: auto; /* Flexibilidade na altura */
-    max-width: 100%; /* Limite de largura */
-    padding: 2rem; /* Preenchimento interno */
+    height: auto;
+    max-width: 100%;
+    padding: 2rem;
     width: 100%;
   }
 
@@ -1589,8 +1522,8 @@ form button:hover {
   }
 
   .unique-uri-title {
-    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
-    color: var(--neutral900); /* Cor do texto */
+    font-size: 2rem;
+    color: var(--neutral900);
   }
 
   .unique-uri-horizontal-box {
@@ -1621,9 +1554,9 @@ form button:hover {
   }
 
   .unique-uri-image {
-    width: 100%; /* Ajusta a largura da imagem conforme necessário */
-    max-width: 250px; /* Limita a largura máxima */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    max-width: 250px;
+    height: auto;
   }
 
   .unique-uri-text-overlay {
@@ -1639,7 +1572,7 @@ form button:hover {
   .unique-uri-description-text {
     text-align: center;
     flex: 1;
-    margin: 0; /* Remove margem padrão */
+    margin: 0;
   }
 
   .unique-uri-cta-link {
@@ -1648,7 +1581,6 @@ form button:hover {
     font-weight: 500;
   }
 
-  ////////////    FEATURES 2 ////////////
   .container_quaternary {
     width: 100%;
     margin: 0 auto;
@@ -1719,8 +1651,6 @@ form button:hover {
     flex-direction: column-reverse;
   }
 
-  ////////// frases//////
-
   .call_to_action {
     text-align: center;
     display: flex;
@@ -1730,7 +1660,6 @@ form button:hover {
     margin: 1px auto;
   }
 
-  ////////////////////  DOWNLOAD   /////////////////////////
   .container_community_security {
     width: 100%;
   }
@@ -1790,7 +1719,6 @@ form button:hover {
     justify-content: center;
   }
 
-  ////////////////////////////////////form
   .container_form_section {
     width: 100%;
   }
@@ -1842,6 +1770,7 @@ form button:hover {
   .form_content {
     width: 100%;
   }
+
   .text_block_form {
     text-align: right;
     flex: 1;
@@ -1855,8 +1784,8 @@ form button:hover {
 
   .form_image_container {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     padding: 1rem;
@@ -1864,9 +1793,9 @@ form button:hover {
   }
 
   .form_image_container img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: contain; /* Ajusta a imagem para caber no contêiner sem distorção */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .form_image_container h2 {
@@ -1960,12 +1889,12 @@ form button:hover {
     transition: background-color 0.2s ease;
   }
 
-  .checkbox input[type="checkbox"]:checked + .custom-checkbox-label::before {
+  .checkbox input[type="checkbox"]:checked+.custom-checkbox-label::before {
     background-color: var(--primary900);
     border-color: var(--primary900);
   }
 
-  .checkbox input[type="checkbox"]:checked + .custom-checkbox-label::after {
+  .checkbox input[type="checkbox"]:checked+.custom-checkbox-label::after {
     content: "";
     position: absolute;
     left: 8px;
@@ -1987,11 +1916,6 @@ form button:hover {
 
   form button:hover {
     background-color: var(--primary500);
-  }
-
-  /////////////////// FAQ //////////////////
-
-  .container_doubts_out {
   }
 
   .container_doubts {
