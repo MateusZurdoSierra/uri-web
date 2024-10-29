@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./Header.module.css"; // Certifique-se de criar e definir este arquivo de CSS
+import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
   return (
@@ -13,20 +13,6 @@ const Header: React.FC = () => {
           width={90}
           height={150}
         />
-
-        {/* <nav>
-          <ul className={styles.navLinks}>
-            <li>
-              <Link href="/about">Sobre o Uri</Link>
-            </li>
-            <li>
-              <Link href="/features">Funcionalidades</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contatos</Link>
-            </li>
-          </ul>
-        </nav> */}
       </div>
     </header>
   );

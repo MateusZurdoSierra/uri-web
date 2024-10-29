@@ -1,5 +1,5 @@
 .menuContainer {
-  position: relative; /* Para posicionar o menu */
+  position: relative;
 }
 
 .menuButton {
@@ -12,13 +12,13 @@
 
 .menu {
   position: absolute;
-  top: 40px; /* Ajuste a posição conforme necessário */
+  top: 40px;
   right: 0;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Para garantir que o menu fique acima de outros elementos */
+  z-index: 1000;
 }
 
 .menu ul {
@@ -37,5 +37,5 @@
 }
 
 .menu li:hover {
-  background-color: #f0f0f0; /* Efeito de hover */
+  background-color: #f0f0f0;
 }

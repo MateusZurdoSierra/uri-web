@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import styles from "./MobileMenu.module.css"; // Certifique-se de criar e definir este arquivo de CSS
+import styles from "./MobileMenu.module.css"; 
 
 interface MobileMenuProps {
-  // Corrigido para 'MobileMenuProps'
+  
   isOpen: boolean;
   toggleMenu: () => void;
 }

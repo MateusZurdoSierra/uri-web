@@ -9,7 +9,8 @@
   border: none;
   cursor: pointer;
   border-bottom: 4px solid var(--primary900);
-  width: 700px;
+  max-width: 700px;
+  width: 80vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,7 +25,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 700px;
+  max-width: 700px;
+  width: 80vw;
   max-height: 900px;
   overflow: hidden;
   transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
@@ -59,11 +61,11 @@
   transform: rotate(180deg);
   transition: transform 0.3s ease-out;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .button {
     font-size: 1rem;
     font-weight: 600;
-    width: 100%;
+    width: 90vw;
   }
 
   .childrenText {
@@ -74,9 +76,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-
-    max-height: 900px;
+    width: 90vw;
+    max-height: 100vh;
     overflow: hidden;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
     padding: 10px;
