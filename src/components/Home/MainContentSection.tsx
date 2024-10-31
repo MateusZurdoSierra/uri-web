@@ -19,7 +19,7 @@ const MainContentSection = () => (
       </div>
       <div className="content-right">
         <Image
-          src="/svg/social2.svg"
+          src="/svg/SocialDistancing.svg"
           alt="Ilustração de segurança"
           width={650}
           height={550}

@@ -9,7 +9,7 @@ const AboutContentSection = () => (
         <article className="unique-uri-content">
           <figure className="unique-uri-image-text-overlay">
             <Image
-              src="/svg/SocialDistancing.svg"
+              src="/svg/social2.svg"
               alt="Jovem caminhando ao parque"
               className="unique-uri-image"
               width={850}

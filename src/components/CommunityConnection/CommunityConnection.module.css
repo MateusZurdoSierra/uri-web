@@ -1,11 +1,8 @@
 .fullScreenContainer {
-  width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background-color: var(--neutral100);
+  /* padding: 2rem; */
 }
 
 .textWrapper {
@@ -14,52 +11,62 @@
 }
 
 .heading {
-  font-size: 2rem;
-  color: var(--primary500);
+  font-size: 2.5rem;
+  color: var(--primary900);
   font-weight: 600;
   line-height: 1.4;
 }
 
+@media (min-width: 3840px) {
+  .textWrapper {
+    max-width: 1600px; /* Ajuste para ocupar mais espaço em 4K */
+  }
+
+  .heading {
+    font-size: 4rem; /* Aumenta a fonte para melhor legibilidade */
+  }
+}
+
 @media (max-width: 1024px) {
   .heading {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .fullScreenContainer {
-    padding: 1rem;
+    /* padding: 2rem 0; */
   }
 }
 
 @media (max-width: 826px) {
   .heading {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .fullScreenContainer {
-    padding: 1rem;
+    /* padding: 2rem; */
   }
 }
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 
   .fullScreenContainer {
-    padding: 1rem;
+    /* padding: 2rem; */
   }
 }
 
 @media (max-width: 480px) {
   .heading {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .textWrapper {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .fullScreenContainer {
-    padding: 0.5rem;
+    /* padding: 2rem; */
   }
 }

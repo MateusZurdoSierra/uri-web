@@ -21,6 +21,20 @@
   height: auto;
 }
 
+@media (min-width: 3840px) {
+  .header {
+    padding: 2rem 0; /* Ajuste do padding para telas maiores */
+  }
+
+  .headerContainer {
+    max-width: 2500px; /* Aumenta o max-width para aproveitar o espaço */
+    padding: 0 40px; /* Aumenta o padding lateral */
+  }
+
+  .logo {
+    width: 150px; /* Aumenta o tamanho do logo */
+  }
+}
 @media (max-width: 768px) {
   .header {
     display: flex;
