@@ -79,6 +79,30 @@ body {
   color: var(--neutral500);
 }
 
+.button_link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: var(--primary900);
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+
+  margin-top: 1rem;
+}
+
+.button_link:hover {
+  background-color: var(--primary500);
+}
+
+.lion {
+  font-weight: 500;
+  color: var(--primary900);
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -272,7 +296,7 @@ body {
 
 .container_quaternary {
   width: 100%;
-  margin: 0 auto;
+  margin: 5rem auto;
   background-color: var(--neutral50);
 }
 
@@ -401,7 +425,7 @@ body {
   margin: auto;
   padding: 64px;
   flex-direction: column;
-  background-color: var(--neutral50);
+  /* background-color: var(--neutral50); */
 }
 
 .form_size {
@@ -409,8 +433,9 @@ body {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  width: 1000px;
+  width: 1200px;
   gap: 3rem;
+  padding: 2rem;
 }
 
 .text_block_form {
@@ -958,6 +983,7 @@ form button:hover {
   .content-left {
     width: 45%;
     margin-bottom: 0rem;
+    gap: 2rem;
   }
 
   .content-right {
@@ -1477,7 +1503,7 @@ form button:hover {
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
-    gap: 1rem;
+    gap: 4rem;
     max-width: 100%;
     margin: 1rem auto;
   }
@@ -1515,6 +1541,11 @@ form button:hover {
 
   .curves_background {
     display: none;
+  }
+
+  .button_link {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 
   .icon {

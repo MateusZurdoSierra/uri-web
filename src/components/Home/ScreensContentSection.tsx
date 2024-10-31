@@ -1,11 +1,19 @@
+import { motion } from 'framer-motion';
 import '../../app/homeStyles.css';
 import Image from 'next/image';
+import { fadeIn } from '@/variants';
 
 const ScreensContentSection = () => (
   <section className="container_quaternary">
     <div className="quaternary_container">
       <article className="section_block incident">
-        <figure className="figure_app_uri">
+        <motion.div
+          variants={fadeIn('right', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="figure_app_uri"
+        >
           <Image
             src="/svg/incidentPhone.svg"
             alt="Registro de Incidentes"
@@ -14,8 +22,14 @@ const ScreensContentSection = () => (
             priority
             unoptimized
           />
-        </figure>
-        <div className="text">
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="text"
+        >
           <h3>Registro de Incidentes</h3>
           <p>
             Permite que você reporte ocorrências no seu bairro, como atividades
@@ -23,19 +37,31 @@ const ScreensContentSection = () => (
             alguns cliques, informe sua comunidade sobre o que está acontecendo
             e ajude a manter todos em alerta.
           </p>
-        </div>
+        </motion.div>
       </article>
 
       <article className="section_block notices">
-        <div className="text">
+        <motion.div
+          variants={fadeIn('right', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="text"
+        >
           <h3>Notificações e Alertas</h3>
           <p>
             Receba alertas imediatos sobre incidentes reportados próximos a
             você. Assim, você fica sempre atualizado sobre o que está
             acontecendo na sua área e pode agir com rapidez quando necessário.
           </p>
-        </div>
-        <figure className="figure_app_uri">
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="figure_app_uri"
+        >
           <Image
             src="/svg/homePhone.svg"
             alt="Notificações e Alertas"
@@ -44,11 +70,17 @@ const ScreensContentSection = () => (
             priority
             unoptimized
           />
-        </figure>
+        </motion.div>
       </article>
 
       <article className="section_block emergence">
-        <figure className="figure_app_uri">
+        <motion.div
+          variants={fadeIn('right', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="figure_app_uri"
+        >
           <Image
             src="/svg/alertPhone.svg"
             alt="SOS de Emergência"
@@ -57,8 +89,14 @@ const ScreensContentSection = () => (
             priority
             unoptimized
           />
-        </figure>
-        <div className="text">
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="text"
+        >
           <h3>SOS de Emergência</h3>
           <p>
             Em situações de emergência, use o botão SOS para enviar um alerta
@@ -66,11 +104,17 @@ const ScreensContentSection = () => (
             assalto ou desastre, todos ficarão informados e poderão tomar
             medidas rápidas para se proteger.
           </p>
-        </div>
+        </motion.div>
       </article>
 
       <article className="section_block invite">
-        <div className="text">
+        <motion.div
+          variants={fadeIn('right', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="text"
+        >
           <h3>Convidar Membros</h3>
           <p>
             O Uri permite que moradores se comuniquem e compartilhem
@@ -78,8 +122,14 @@ const ScreensContentSection = () => (
             mensagens, deixe comentários nos relatórios de incidentes e
             fortaleça os laços com seus vizinhos.
           </p>
-        </div>
-        <figure className="figure_app_uri">
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="figure_app_uri"
+        >
           <Image
             src="/svg/sharePhone.svg"
             alt="Convidar Membros"
@@ -88,7 +138,7 @@ const ScreensContentSection = () => (
             priority
             unoptimized
           />
-        </figure>
+        </motion.div>
       </article>
     </div>
   </section>

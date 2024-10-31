@@ -1,25 +1,40 @@
-"use client";
+'use client';
 
-import React from "react";
-import { AppContainer, Wrapper, Marquee, MarqueeGroup, TextGroup } from "./LionStyles"; // Importando os estilos
+import React from 'react';
+import Image from 'next/image';
+import {
+  AppContainer,
+  Wrapper,
+  Marquee,
+  MarqueeGroup,
+  TextGroup,
+} from './LionStyles';
 
 function Lion() {
-    const row1Text = "O LEÃO DA SUA VIZINHANÇA"; // Frase que será exibida
+  const row1Text = 'O LEÃO DA SUA VIZINHANÇA';
 
-    return (
-        <AppContainer>
-            <Wrapper>
-                <Marquee>
-                    <MarqueeGroup>
-                        {/* Exibindo a frase repetidamente */}
-                        {[...Array(5)].map((_, index) => (
-                            <TextGroup key={index}>{row1Text}</TextGroup>
-                        ))}
-                    </MarqueeGroup>
-                </Marquee>
-            </Wrapper>
-        </AppContainer>
-    );
+  return (
+    <AppContainer>
+      <Wrapper>
+        <Marquee>
+          <MarqueeGroup>
+            {[...Array(8)].map((_, index) => (
+              <TextGroup key={index}>
+                <Image
+                  src="/svg/logo.svg"
+                  alt="Leão"
+                  width={50}
+                  height={50}
+                  style={{ fill: '#d6d6d6' }}
+                />
+                {row1Text}
+              </TextGroup>
+            ))}
+          </MarqueeGroup>
+        </Marquee>
+      </Wrapper>
+    </AppContainer>
+  );
 }
 
 export default Lion;

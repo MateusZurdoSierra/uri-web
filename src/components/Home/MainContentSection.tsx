@@ -1,10 +1,22 @@
-import '../../app/homeStyles.css';
+'use client'; // Diretriz para Next.js, se necessário
+
+import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import '../../app/homeStyles.css';
+
+import { fadeIn } from '../../variants';
 
 const MainContentSection = () => (
   <section>
     <div className="main_content">
-      <div className="content-left">
+      <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="content-left"
+      >
         <div className="text_block">
           <h1>
             <span className="span_title">Segurança</span> ao seu alcance,
@@ -15,9 +27,18 @@ const MainContentSection = () => (
             atividades suspeitas e proteger a vizinhança. Juntos podemos estar
             tão seguros quanto em um condomínio.
           </p>
+          <a href="#form" className="button_link">
+            Ir para o Formulário
+          </a>
         </div>
-      </div>
-      <div className="content-right">
+      </motion.div>
+      <motion.div
+        variants={fadeIn('left', 0.3)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="content-right"
+      >
         <Image
           src="/svg/SocialDistancing.svg"
           alt="Ilustração de segurança"
@@ -26,7 +47,7 @@ const MainContentSection = () => (
           priority
           unoptimized
         />
-      </div>
+      </motion.div>
     </div>
   </section>
 );

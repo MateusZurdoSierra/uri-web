@@ -1,15 +1,20 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./Footer.module.css"; 
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './Footer.module.css';
+import Lion from '../AutoScrolling/Lion';
 
 const Footer: React.FC = () => {
   return (
     <footer className={styles.container_footer}>
-      {/* Seção principal do rodapé */}
+      <div className={styles.row_footer_tree}>
+        <div className={styles.container_lion}>
+          <Lion />
+        </div>
+      </div>
+
       <div className={styles.row_footer_one}>
         <div className={styles.row_footer}>
-          {/* Logo da empresa */}
           <div className={styles.logo_footer}>
             <Image
               src="/svg/logoWhite.svg"
@@ -98,7 +103,6 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Seção de Políticas */}
       <div className={styles.row_footer_two}>
         <div className={styles.container_police}>
           <ul>

@@ -1,3 +1,5 @@
+'use client';
+
 import './homeStyles.css';
 import Header from '@/components/Header/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,6 +14,8 @@ import AboutContentSection from '@/components/Home/AboutContentSection';
 import ScreensContentSection from '@/components/Home/ScreensContentSection';
 import FormContentSection from '@/components/Home/FormContentSection';
 import FaqContentSection from '@/components/Home/FaqContentSection';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/variants';
 
 export default function Home() {
   return (
@@ -20,7 +24,13 @@ export default function Home() {
 
       <MainContentSection />
 
-      <div className="Community_Connection">
+      <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="Community_Connection"
+      >
         <div className="Community_Connection_content">
           <CommunityConnection
             text="Fortaleça a segurança do seu bairro com a colaboração dos
@@ -28,21 +38,25 @@ export default function Home() {
           />
         </div>
         <FontAwesomeIcon icon={faChevronDown} className="icon" />
-      </div>
+      </motion.div>
 
       <Feature />
 
       <AboutContentSection />
 
-      {/* <Lion /> */}
-
-      <ScreensContentSection />
-
-      <div className="Community_Connection">
+      <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="Community_Connection"
+      >
         <div className="Community_Connection_content">
           <CommunityConnection text="O Uri conecta você à sua comunidade para construir um ambiente mais seguro." />
         </div>
-      </div>
+      </motion.div>
+
+      <ScreensContentSection />
 
       <FormContentSection />
 
