@@ -47,7 +47,7 @@
 
   .headerContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 768px;
@@ -56,7 +56,7 @@
 
   .headerContainer {
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding: 0 10px;
   }
 

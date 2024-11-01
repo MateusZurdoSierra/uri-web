@@ -2,6 +2,7 @@ import styled, { keyframes, css } from 'styled-components';
 
 export const AppContainer = styled.div`
   width: 100vw;
+  max-width: 100%; /* Garante que não ultrapasse a largura da viewport */
   margin: 2rem auto;
   color: #333333;
   position: relative;
@@ -16,19 +17,23 @@ export const AppContainer = styled.div`
 
   @media (max-width: 992px) {
     margin: 1rem;
+    max-width: 450px;
   }
 
   @media (max-width: 768px) {
     margin: 0.5rem;
+    max-width: 350px;
   }
 
   @media (max-width: 576px) {
     margin: 0.25rem;
+    max-width: 320px; /* Ajuste adicional para telas muito pequenas */
   }
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
+  max-width: 100%; /* Previne que exceda a largura da tela */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,9 +42,9 @@ export const Wrapper = styled.div`
 
 export const Marquee = styled.div`
   display: flex;
-  width: 100%; /* Mudei para 100% para responsividade */
-  max-width: 1200px; /* Limite máximo */
-  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* Oculta o conteúdo que ultrapassa a tela */
   user-select: none;
   mask-image: linear-gradient(
     to right,
@@ -50,7 +55,6 @@ export const Marquee = styled.div`
   );
 
   @media (max-width: 1200px) {
-    /* Ajustes para telas menores */
     padding: 0 1rem;
   }
 
@@ -82,24 +86,25 @@ const common = css`
   animation: ${scrollX} 30s linear infinite;
 
   @media (max-width: 1200px) {
-    font-size: 2rem; /* Ajuste de tamanho da fonte */
+    font-size: 2rem;
   }
 
   @media (max-width: 992px) {
-    font-size: 1.8rem; /* Ajuste de tamanho da fonte */
+    font-size: 1.8rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 1.5rem; /* Ajuste de tamanho da fonte */
+    font-size: 1.5rem;
   }
 
   @media (max-width: 576px) {
-    font-size: 1.2rem; /* Ajuste de tamanho da fonte */
+    font-size: 1.2rem;
   }
 `;
 
 export const MarqueeGroup = styled.div`
   ${common}
+  max-width: 100%; /* Impede que ultrapasse a largura da viewport */
 `;
 
 export const TextGroup = styled.div`
@@ -110,18 +115,18 @@ export const TextGroup = styled.div`
   gap: 1.5rem;
 
   @media (max-width: 1200px) {
-    font-size: 1.8rem; /* Ajuste de tamanho da fonte */
+    font-size: 1.8rem;
   }
 
   @media (max-width: 992px) {
-    font-size: 1.6rem; /* Ajuste de tamanho da fonte */
+    font-size: 1.6rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 1.4rem; /* Ajuste de tamanho da fonte */
+    font-size: 1.4rem;
   }
 
   @media (max-width: 576px) {
-    font-size: 1.2rem; /* Ajuste de tamanho da fonte */
+    font-size: 1.2rem;
   }
 `;
