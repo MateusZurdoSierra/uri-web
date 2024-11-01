@@ -2,10 +2,19 @@ import '../../app/homeStyles.css';
 import Image from 'next/image';
 import Form from '../Form/Form';
 import Title from '../TitleProps';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/variants';
 
 const FormContentSection = () => (
   <section className="container_form_section">
-    <div className="form_size" id="form">
+    <motion.div
+      variants={fadeIn('up', 0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="form_size"
+      id="form"
+    >
       <div className="form_image_container">
         <Title
           text="Traga o Uri para o seu bairro, facilitando a segurança e colaboração
@@ -22,7 +31,7 @@ const FormContentSection = () => (
         />
       </div>
       <Form />
-    </div>
+    </motion.div>
   </section>
 );
 

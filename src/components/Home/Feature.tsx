@@ -17,7 +17,7 @@ const Feature: React.FC = () => {
       variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: true }}
       className="container_secondary"
     >
       <div className="container_box">
@@ -26,7 +26,7 @@ const Feature: React.FC = () => {
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className="text_left"
           >
             <h3>O futuro do seu bairro</h3>
@@ -36,7 +36,7 @@ const Feature: React.FC = () => {
             variants={fadeIn('left', 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className="text_right"
           >
             <p>
@@ -51,7 +51,7 @@ const Feature: React.FC = () => {
             variants={fadeIn('up', 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className="feature_item"
           >
             <FontAwesomeIcon icon={faLandMineOn} className="icon_feature" />
@@ -64,7 +64,7 @@ const Feature: React.FC = () => {
             variants={fadeIn('up', 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className="feature_item"
           >
             <FontAwesomeIcon
@@ -82,7 +82,7 @@ const Feature: React.FC = () => {
             variants={fadeIn('up', 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className="feature_item"
           >
             <FontAwesomeIcon icon={faClipboard} className="icon_feature" />
@@ -96,7 +96,7 @@ const Feature: React.FC = () => {
             variants={fadeIn('up', 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className="feature_item"
           >
             <FontAwesomeIcon icon={faUserGroup} className="icon_feature" />

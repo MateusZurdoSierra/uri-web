@@ -8,10 +8,10 @@ const ScreensContentSection = () => (
     <div className="quaternary_container">
       <article className="section_block incident">
         <motion.div
-          variants={fadeIn('right', 0.2)}
+          variants={fadeIn('up', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true }}
           className="figure_app_uri"
         >
           <Image
@@ -24,10 +24,10 @@ const ScreensContentSection = () => (
           />
         </motion.div>
         <motion.div
-          variants={fadeIn('left', 0.2)}
+          variants={fadeIn('down', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true }}
           className="text"
         >
           <h3>Registro de Incidentes</h3>
@@ -42,10 +42,10 @@ const ScreensContentSection = () => (
 
       <article className="section_block notices">
         <motion.div
-          variants={fadeIn('right', 0.2)}
+          variants={fadeIn('up', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true }}
           className="text"
         >
           <h3>Notificações e Alertas</h3>
@@ -56,10 +56,10 @@ const ScreensContentSection = () => (
           </p>
         </motion.div>
         <motion.div
-          variants={fadeIn('left', 0.2)}
+          variants={fadeIn('down', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true }}
           className="figure_app_uri"
         >
           <Image
@@ -75,10 +75,10 @@ const ScreensContentSection = () => (
 
       <article className="section_block emergence">
         <motion.div
-          variants={fadeIn('right', 0.2)}
+          variants={fadeIn('up', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true }}
           className="figure_app_uri"
         >
           <Image
@@ -91,10 +91,10 @@ const ScreensContentSection = () => (
           />
         </motion.div>
         <motion.div
-          variants={fadeIn('left', 0.2)}
+          variants={fadeIn('down', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true }}
           className="text"
         >
           <h3>SOS de Emergência</h3>
@@ -109,10 +109,10 @@ const ScreensContentSection = () => (
 
       <article className="section_block invite">
         <motion.div
-          variants={fadeIn('right', 0.2)}
+          variants={fadeIn('up', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true }}
           className="text"
         >
           <h3>Convidar Membros</h3>
@@ -124,10 +124,10 @@ const ScreensContentSection = () => (
           </p>
         </motion.div>
         <motion.div
-          variants={fadeIn('left', 0.2)}
+          variants={fadeIn('down', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true }}
           className="figure_app_uri"
         >
           <Image

@@ -1,10 +1,18 @@
+import { motion } from 'framer-motion';
 import '../../app/homeStyles.css';
 import Collapse from '../Collapse/Collapse';
 import Title from '../TitleProps';
+import { fadeIn } from '@/variants';
 
 const FaqContentSection = () => (
   <section>
-    <div className="container_doubts">
+    <motion.div
+      variants={fadeIn('up', 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="container_doubts"
+    >
       <div className="title_collapse">
         <Title text="Ficou com dúvidas? Nós te ajudamos" level={2} />
       </div>
@@ -70,7 +78,7 @@ const FaqContentSection = () => (
           acontecendo na área e ajudem a manter o bairro mais seguro.
         </p>
       </Collapse>
-    </div>
+    </motion.div>
   </section>
 );
 

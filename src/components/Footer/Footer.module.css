@@ -19,7 +19,7 @@
 }
 
 .row_footer_tree {
-  background-color: var(--neutral900);
+  background-color: var(--primary500);
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
@@ -132,9 +132,9 @@
   fill: blue;
 }
 
-/* Media Queries para Responsividade */
+@media (min-width: 2500px) {
+}
 
-/* Telas grandes - Monitores */
 @media (min-width: 1200px) {
   .container_footer {
     justify-content: space-between;

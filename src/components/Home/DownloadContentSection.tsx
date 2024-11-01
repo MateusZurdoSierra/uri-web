@@ -2,12 +2,20 @@ import '../../app/homeStyles.css';
 
 import Image from 'next/image';
 import Title from '../TitleProps';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/variants';
 
 const DownloadContentSection = () => (
   <section className="container_community_security">
     <div className="community_security_content">
       <div className="left_block_security">
-        <div className="text_block_security">
+        <motion.div
+          variants={fadeIn('down', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="text_block_security"
+        >
           <Title
             text="A segurança começa aqui, baixe o Uri e conecte-se com sua
                 comunidade."
@@ -52,8 +60,14 @@ const DownloadContentSection = () => (
               />
             </a>
           </div>
-        </div>
-        <div className="app-store-links">
+        </motion.div>
+        <motion.div
+          variants={fadeIn('up', 0.5)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="app-store-links"
+        >
           <Image
             src="/svg/phoneDownload.svg"
             alt="Baixar na App Store"
@@ -64,7 +78,7 @@ const DownloadContentSection = () => (
             priority
             unoptimized
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   </section>

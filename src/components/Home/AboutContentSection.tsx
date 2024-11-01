@@ -11,7 +11,7 @@ const AboutContentSection = () => (
           <figure className="unique-uri-image-text-overlay">
             <motion.div
               className="unique-uri-image-text-overlay"
-              variants={fadeIn('right', 0.3)}
+              variants={fadeIn('down', 0.3)}
               initial="hidden"
               whileInView="show"
             >
@@ -28,10 +28,10 @@ const AboutContentSection = () => (
             <figcaption className="unique-uri-text-overlay">
               <motion.div
                 className="unique-uri-text-overlay"
-                variants={fadeIn('down', 0.3)}
+                variants={fadeIn('up', 0.3)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: true }}
               >
                 <h2 id="unique-uri-title" className="unique-uri-title">
                   O que torna <br /> o <span>Uri</span> único?

@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React, { useState, ReactNode } from "react";
-import { motion, AnimatePresence } from "framer-motion"; // Importa as animações
-import styles from "./Collapse.module.css";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState, ReactNode } from 'react';
+import { motion, AnimatePresence } from 'framer-motion'; // Importa as animações
+import styles from './Collapse.module.css';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface CollapseProps {
   title: string;
@@ -15,7 +15,7 @@ const Collapse: React.FC<CollapseProps> = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen(prev => !prev);
   };
 
   return (
@@ -29,7 +29,7 @@ const Collapse: React.FC<CollapseProps> = ({ title, children }) => {
         {title}
         <FontAwesomeIcon
           icon={faChevronDown}
-          className={`${isOpen ? styles.rotate : ""}`}
+          className={`${isOpen ? styles.rotate : ''}`}
         />
       </button>
       <div

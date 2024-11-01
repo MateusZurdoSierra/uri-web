@@ -11,10 +11,10 @@ const MainContentSection = () => (
   <section>
     <div className="main_content">
       <motion.div
-        variants={fadeIn('up', 0.2)}
+        variants={fadeIn('down', 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true }}
         className="content-left"
       >
         <div className="text_block">
@@ -33,10 +33,10 @@ const MainContentSection = () => (
         </div>
       </motion.div>
       <motion.div
-        variants={fadeIn('left', 0.3)}
+        variants={fadeIn('up', 0.3)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true }}
         className="content-right"
       >
         <Image

@@ -16,6 +16,7 @@ import FormContentSection from '@/components/Home/FormContentSection';
 import FaqContentSection from '@/components/Home/FaqContentSection';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/variants';
+import DownloadContentSection from '@/components/Home/DownloadContentSection';
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         variants={fadeIn('up', 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true }}
         className="Community_Connection"
       >
         <div className="Community_Connection_content">
@@ -48,7 +49,7 @@ export default function Home() {
         variants={fadeIn('up', 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true }}
         className="Community_Connection"
       >
         <div className="Community_Connection_content">
@@ -57,6 +58,20 @@ export default function Home() {
       </motion.div>
 
       <ScreensContentSection />
+
+      <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="Community_Connection"
+      >
+        <div className="Community_Connection_content">
+          <CommunityConnection text="O Uri conecta você à sua comunidade para construir um ambiente mais seguro." />
+        </div>
+      </motion.div>
+
+      <DownloadContentSection />
 
       <FormContentSection />
 

@@ -75,7 +75,7 @@ body {
 
 .content-left p {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   color: var(--neutral500);
 }
 
@@ -179,6 +179,7 @@ body {
 .container_secondary p {
   font-size: 1rem;
   color: var(--neutral900);
+  line-height: 1.5;
 }
 
 .features {
@@ -210,7 +211,7 @@ body {
 
 .feature_item p {
   font-size: 0.875rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   color: var(--neutral500);
 }
 
@@ -351,6 +352,7 @@ body {
   font-size: 1rem;
   color: var(--neutral500);
   font-weight: 200;
+  line-height: 1.5;
 }
 
 .container_community_security {
@@ -360,7 +362,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 .left_block_security {
@@ -375,8 +377,8 @@ body {
 
 .text_block_security {
   display: flex;
-  width: 45%;
-  gap: 20px;
+  width: 40%;
+  gap: 2rem;
   flex-direction: column;
 }
 
@@ -538,11 +540,12 @@ form label {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
-  line-height: 20px;
+  line-height: 1.5;
 }
 
 .custom-checkbox-label p {
   font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 .custom-checkbox-label::before {
@@ -616,8 +619,9 @@ form button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 5rem auto;
-  padding: 4rem;
+  margin: 5rem auto 0 auto;
+  padding: 5rem;
+  background-color: var(--neutral50);
 }
 
 .title_collapse {
@@ -655,7 +659,7 @@ form button:hover {
 .Community_Connection {
   display: flex;
   width: 80vw;
-  padding: 4rem;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
   margin: 3rem auto;
@@ -686,7 +690,7 @@ form button:hover {
 
   .content-left p {
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 1.5;
   }
 
   .icon {
@@ -720,6 +724,7 @@ form button:hover {
 
   .container_secondary p {
     font-size: 1.5rem;
+    line-height: 1.5;
   }
 
   .feature_item h1 {
@@ -728,6 +733,7 @@ form button:hover {
 
   .feature_item p {
     font-size: 1.2rem;
+    line-height: 1.5;
   }
 
   .icon_feature {
@@ -770,7 +776,7 @@ form button:hover {
 
   .content-left p {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
     color: var(--neutral500);
   }
 
@@ -852,6 +858,7 @@ form button:hover {
   .container_secondary p {
     font-size: 1rem;
     color: var(--neutral900);
+    line-height: 1.5;
   }
 
   .features {
@@ -883,6 +890,7 @@ form button:hover {
 
   .feature_item p {
     font-size: 0.875rem;
+    line-height: 1.5;
   }
 
   .section-unique-uri {
@@ -998,12 +1006,12 @@ form button:hover {
 
   .content-left h1 {
     font-size: 1.8rem;
-    line-height: auto;
+    line-height: 1.2;
   }
 
   .content-left p {
     font-size: 0.875rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
     color: var(--neutral500);
   }
 
@@ -1084,6 +1092,8 @@ form button:hover {
   }
 
   .container_secondary p {
+    line-height: 1.5;
+
     font-size: 1rem;
     color: var(--neutral900);
   }
@@ -1117,6 +1127,7 @@ form button:hover {
 
   .feature_item p {
     font-size: 0.875rem;
+    line-height: 1.5;
   }
 
   .section-unique-uri {
@@ -1231,6 +1242,7 @@ form button:hover {
   .section_block p {
     font-size: 0.875rem;
     width: 100%;
+    line-height: 1.5;
   }
 
   .container_community_security {
@@ -1240,7 +1252,7 @@ form button:hover {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
   }
 
   .left_block_security {
@@ -1274,7 +1286,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 40%;
   }
 
   .app-store-links img {
@@ -1444,11 +1456,12 @@ form button:hover {
     position: relative;
     padding-left: 35px;
     cursor: pointer;
-    line-height: 20px;
+    line-height: 1.5;
   }
 
   .custom-checkbox-label p {
     font-size: 0.75rem;
+    line-height: 1.5;
   }
 
   .custom-checkbox-label::before {
@@ -1526,7 +1539,7 @@ form button:hover {
 
   .content-left h1 {
     font-size: 1.2rem;
-    line-height: auto;
+    line-height: 1.2;
   }
 
   .span_text_block_security {
@@ -1537,6 +1550,7 @@ form button:hover {
     font-size: 0.95rem;
     color: var(--neutral500);
     padding: 0 1rem;
+    line-height: 1.5;
   }
 
   .curves_background {
@@ -1619,6 +1633,7 @@ form button:hover {
     font-size: 1rem;
     color: var(--neutral900);
     text-align: center;
+    line-height: 1.5;
   }
 
   .features {
@@ -1656,6 +1671,7 @@ form button:hover {
   .feature_item p {
     font-size: 0.875rem;
     text-align: center;
+    line-height: 1.5;
   }
 
   .container_tertiary {
@@ -1682,6 +1698,7 @@ form button:hover {
 
   .container_tertiary p {
     font-size: 1rem;
+    line-height: 1.5;
   }
 
   .section-unique-uri {
@@ -1827,6 +1844,7 @@ form button:hover {
     font-size: 0.875rem;
     width: 100%;
     text-align: center;
+    line-height: 1.5;
   }
 
   .notices {
@@ -1857,7 +1875,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-width: 768px;
+    max-width: 600px;
     padding: 2rem;
   }
 
@@ -2056,7 +2074,7 @@ form button:hover {
     position: relative;
     padding-left: 35px;
     cursor: pointer;
-    line-height: 20px;
+    line-height: 1.5;
   }
 
   .custom-checkbox-label p {

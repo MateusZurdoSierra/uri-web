@@ -9,10 +9,10 @@
 
 .headerContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 0 20px;
 }
 
