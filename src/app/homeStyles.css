@@ -96,6 +96,7 @@ body {
 
 .button_link:hover {
   background-color: var(--primary500);
+  cursor: pointer;
 }
 
 .lion {

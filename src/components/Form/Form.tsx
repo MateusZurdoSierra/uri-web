@@ -1,10 +1,14 @@
 "use client";
 
+import { useScrollContext } from "@/context/ScrollContext";
 import { db } from "@/firebase";
 import { addDoc, collection } from "firebase/firestore";
 import React, { useState } from "react";
 
 const Form: React.FC = () => {
+  //@ts-ignore
+  const { formRef } = useScrollContext();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -47,7 +51,7 @@ const Form: React.FC = () => {
   };
 
   return (
-    <div className="form_component">
+    <div ref={formRef} className="form_component">
       <div className="form_content">
         <form onSubmit={handleSubmit} method="POST">
           <label htmlFor="nome">Nome*</label>

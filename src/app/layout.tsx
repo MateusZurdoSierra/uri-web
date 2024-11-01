@@ -1,3 +1,4 @@
+import { ScrollProvider } from "@/context/ScrollContext";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
@@ -7,6 +8,7 @@ const geistSans = localFont({
   weight: "100 900",
   display: "swap",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -27,7 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <ScrollProvider>
+          <div>{children}</div>
+        </ScrollProvider>
       </body>
     </html>
   );
