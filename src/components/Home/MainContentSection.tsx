@@ -28,7 +28,7 @@ const MainContentSection = () => (
             tão seguros quanto em um condomínio.
           </p>
           <a href="#form" className="button_link">
-            Ir para o Formulário
+            Saiba mais
           </a>
         </div>
       </motion.div>
