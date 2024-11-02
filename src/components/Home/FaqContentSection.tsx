@@ -73,7 +73,7 @@ const FaqContentSection = () => (
           Os incidentes que você reportar no Uri{' '}
           <strong>
             são visíveis para todos os moradores que fazem parte do seu bairro.
-          </strong>
+          </strong>{' '}
           Isso permite que os vizinhos fiquem informados sobre o que está
           acontecendo na área e ajudem a manter o bairro mais seguro.
         </p>
