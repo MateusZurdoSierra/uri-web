@@ -73,7 +73,7 @@ const Feature: React.FC = () => {
             />
             <h1>Mapeamento do bairro</h1>
             <p>
-              Com o auxilio de IA o URI analisará seu bairro de forma
+              Com o auxílio de IA o URI analisará seu bairro de forma
               personalizada para identificar os lugares mais vulneráveis e gerar
               insights
             </p>

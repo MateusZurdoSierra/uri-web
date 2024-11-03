@@ -294,6 +294,7 @@ body {
   text-decoration: none;
   color: var(--primary900);
   font-weight: 500;
+  cursor: pointer;
 }
 
 .container_quaternary {

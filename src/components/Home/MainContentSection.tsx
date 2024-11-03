@@ -1,26 +1,26 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import "../../app/homeStyles.css";
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import '../../app/homeStyles.css';
 
-import { fadeIn } from "../../variants";
-import { useScrollContext } from "@/context/ScrollContext";
+import { fadeIn } from '../../variants';
+import { useScrollContext } from '@/context/ScrollContext';
 
 const MainContentSection = () => {
   //@ts-ignore
   const { formRef } = useScrollContext();
 
   const scrollToForm = () => {
-    formRef.current.scrollIntoView({ behavior: "smooth" });
+    formRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section>
       <div className="main_content">
         <motion.div
-          variants={fadeIn("down", 0.2)}
+          variants={fadeIn('down', 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
@@ -42,7 +42,7 @@ const MainContentSection = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeIn("up", 0.3)}
+          variants={fadeIn('up', 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
@@ -54,7 +54,6 @@ const MainContentSection = () => {
             width={650}
             height={550}
             priority
-            unoptimized
           />
         </motion.div>
       </div>

@@ -2,7 +2,7 @@ import styled, { keyframes, css } from 'styled-components';
 
 export const AppContainer = styled.div`
   width: 100vw;
-  max-width: 100%; /* Garante que não ultrapasse a largura da viewport */
+  max-width: 100%;
   margin: 2rem auto;
   color: #333333;
   position: relative;
@@ -27,13 +27,13 @@ export const AppContainer = styled.div`
 
   @media (max-width: 576px) {
     margin: 0.25rem;
-    max-width: 320px; /* Ajuste adicional para telas muito pequenas */
+    max-width: 320px;
   }
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-width: 100%; /* Previne que exceda a largura da tela */
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,7 @@ export const Marquee = styled.div`
   display: flex;
   width: 100%;
   max-width: 100%;
-  overflow: hidden; /* Oculta o conteúdo que ultrapassa a tela */
+  overflow: hidden;
   user-select: none;
   mask-image: linear-gradient(
     to right,
@@ -104,7 +104,7 @@ const common = css`
 
 export const MarqueeGroup = styled.div`
   ${common}
-  max-width: 100%; /* Impede que ultrapasse a largura da viewport */
+  max-width: 100%;
 `;
 
 export const TextGroup = styled.div`
