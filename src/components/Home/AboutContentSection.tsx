@@ -44,7 +44,7 @@ const AboutContentSection = () => {
                   viewport={{ once: true }}
                 >
                   <h2 id="unique-uri-title" className="unique-uri-title">
-                    O que torna <br /> o <span>Uri</span> único?
+                    O que torna o <span>Uri</span> único?
                   </h2>
                   <p className="unique-uri-description-text">
                     No Uri, acreditamos que segurança começa com união. Nosso
