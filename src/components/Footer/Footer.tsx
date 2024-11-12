@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import styles from './Footer.module.css';
 import Lion from '../AutoScrolling/Lion';
 
@@ -15,20 +15,11 @@ const Footer: React.FC = () => {
 
       <div className={styles.row_footer_one}>
         <div className={styles.row_footer}>
-          <div className={styles.logo_footer}>
-            <Image
-              src="/svg/logoWhite.svg"
-              alt="Logo URI"
-              width={150}
-              height={60}
-            />
-          </div>
-
           {/* Seção de Contato */}
           <div className={styles.footer_links}>
             <h6>Contato</h6>
             <div className={styles.column1}>
-              <a href="mailto:oi@uri.app">oi@uri.app</a>
+              <a href="mailto:oi@uri.app">contato@uriapp.com.br</a>
             </div>
           </div>
 
@@ -36,7 +27,7 @@ const Footer: React.FC = () => {
           <div className={styles.footer_links}>
             <h6>Siga Nossas Redes</h6>
             <div className={styles.column1}>
-              <a
+              {/* <a
                 href="https://www.facebook.com"
                 className={styles.facebook_icon}
               >
@@ -52,7 +43,7 @@ const Footer: React.FC = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
+              </a> */}
 
               <a href="https://www.instagram.com">
                 <svg
@@ -69,7 +60,7 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
 
-              <a href="https://www.twitter.com">
+              {/* <a href="https://www.twitter.com">
                 <svg
                   width="24"
                   height="24"
@@ -82,9 +73,9 @@ const Footer: React.FC = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
+              </a> */}
 
-              <a href="https://www.tiktok.com">
+              {/* <a href="https://www.tiktok.com">
                 <svg
                   width="24"
                   height="24"
@@ -97,22 +88,35 @@ const Footer: React.FC = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
+              </a> */}
             </div>
+          </div>
+          <div className={styles.logo_footer}>
+            <Image
+              src="/svg/logoWhite.svg"
+              alt="Logo URI"
+              width={150}
+              height={60}
+            />
           </div>
         </div>
       </div>
 
       <div className={styles.row_footer_two}>
         <div className={styles.container_police}>
-          <ul>
+          <p>
+            Feito por quem mora em casas de bairro para quem mora em casas de
+            bairro 💜 © 2024 URI marca registrada.
+          </p>
+
+          {/* <ul>
             <li>
               <Link href="#">Política de Privacidade</Link>
             </li>
             <li>
               <Link href="#">Política de Cookies</Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </footer>

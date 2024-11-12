@@ -5,27 +5,33 @@ import Title from '../TitleProps';
 import { fadeIn } from '@/variants';
 
 const FaqContentSection = () => (
-  <section>
+  <section className="container_doubts">
     <motion.div
       variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="container_doubts"
+      className="container_faq"
     >
       <div className="title_collapse">
         <Title text="Ficou com dúvidas? Nós te ajudamos" level={2} />
       </div>
-      <h2 className="text_fac_doubts"></h2>
-      <Collapse title="O Uri substitui a polícia ou serviços de emergência?">
-        <p>
-          Não. <strong>O Uri é uma ferramenta de apoio</strong> que fortalece a
-          colaboração entre moradores, ajudando a identificar e compartilhar
-          informações sobre incidentes no bairro. No entanto, em situações
-          graves, como crimes ou emergências médicas, é essencial acionar as
-          autoridades competentes, como a polícia ou os bombeiros.
-        </p>
-      </Collapse>
+      <div className="faq_box">
+        <Collapse
+          title="          
+              O Uri substitui a polícia ou serviços de emergência?
+         
+          "
+        >
+          <p className="collapse_content">
+            Não. <strong>O Uri é uma ferramenta de apoio</strong> que fortalece
+            a colaboração entre moradores, ajudando a identificar e compartilhar
+            informações sobre incidentes no bairro. No entanto, em situações
+            graves, como crimes ou emergências médicas, é essencial acionar as
+            autoridades competentes, como a polícia ou os bombeiros.
+          </p>
+        </Collapse>
+      </div>
       <Collapse title="Como o Uri protege minha privacidade?">
         <p>
           <strong>A sua privacidade é nossa prioridade.</strong> No Uri,

@@ -27,7 +27,7 @@ const DownloadContentSection = () => (
             nosso bairro um lugar melhor para viver. Tudo de forma simples e
             gratuita.
           </p>
-          <div className="app_buttons">
+          {/* <div className="app_buttons">
             <a
               href="https://play.google.com/store/apps/details?id=com.seuapp.android"
               target="_blank"
@@ -59,7 +59,7 @@ const DownloadContentSection = () => (
                 unoptimized
               />
             </a>
-          </div>
+          </div> */}
         </motion.div>
         <motion.div
           variants={fadeIn('up', 0.5)}

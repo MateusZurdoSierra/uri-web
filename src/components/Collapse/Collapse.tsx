@@ -32,26 +32,22 @@ const Collapse: React.FC<CollapseProps> = ({ title, children }) => {
           className={`${isOpen ? styles.rotate : ''}`}
         />
       </button>
-      <div
-        className={`${styles.content} ${
-          isOpen ? styles.expanded : styles.collapsed
-        }`}
-        id="collapse-content"
-      >
-        <AnimatePresence mode="wait">
-          {isOpen && (
-            <motion.div
-              key="content"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0, transition: { duration: 0.1 } }}
-              transition={{ duration: 0.2 }} // Duração da animação
-            >
-              <div className={styles.childrenText}>{children}</div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            key="content"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2 }} // Duração da animação
+            className={styles.content}
+            id="collapse-content"
+          >
+            <div className={styles.childrenText}>{children}</div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

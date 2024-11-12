@@ -1,87 +1,42 @@
-.title_collapse {
-  display: flex;
-  margin: 60px;
+/* Collapse.module.css */
+.container {
+  /* border: 1px solid #ddd; Ajuste se necessário */
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
 }
 
 .button {
-  color: var(--primary900);
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-bottom: 4px solid var(--primary900);
-  max-width: 700px;
-  width: 80vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--primary50);
-  font-size: 1.5rem;
-  transition: background-color 0.3s;
+  width: 100%;
+  min-width: 700px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
   text-align: left;
-  gap: 10px;
-}
-
-.content {
+  cursor: pointer;
+  background-color: var(--neutral50); /* Cor de fundo da pergunta */
+  border: none;
+  outline: none;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  max-width: 700px;
-  width: 80vw;
-  max-height: 900px;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.childrenText {
-  font-size: 1rem;
   color: var(--neutral700);
-  padding: 15px;
-  /* text-align: justify; */
-  line-height: 1.5;
-}
-
-/* Responsividade */
-
-/* Classes para controle de estado */
-.collapsed {
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-}
-
-.expanded {
-  max-height: 100%;
-  opacity: 1;
 }
 
 .rotate {
   transform: rotate(180deg);
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease;
 }
-@media (max-width: 768px) {
-  .button {
-    font-size: 1rem;
-    font-weight: 600;
-    width: 90vw;
-  }
 
-  .childrenText {
-    font-size: 0.875rem;
-  }
+.content {
+  background-color: var(--neutral50); /* Cor de fundo da resposta */
+  padding: 1rem 2rem;
+  font-size: 14px;
+  overflow: hidden;
+  line-height: 1.5;
+  color: var(--);
+}
 
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    max-height: 100vh;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
+.childrenText {
+  margin-top: 8px;
 }

@@ -59,7 +59,7 @@ export default function Home() {
 
       <ScreensContentSection />
 
-      <motion.div
+      {/* <motion.div
         variants={fadeIn('up', 0.2)}
         initial="hidden"
         whileInView="show"
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="Community_Connection_content">
           <CommunityConnection text="O Uri conecta você à sua comunidade para construir um ambiente mais seguro." />
         </div>
-      </motion.div>
+      </motion.div> */}
 
       <DownloadContentSection />
 
