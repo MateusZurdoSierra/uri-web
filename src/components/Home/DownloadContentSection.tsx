@@ -16,11 +16,13 @@ const DownloadContentSection = () => (
           viewport={{ once: true }}
           className="text_block_security"
         >
-          <Title
-            text="A segurança começa aqui, baixe o Uri e conecte-se com sua
-                comunidade."
-            level={1}
-          />
+          <div className="title-color">
+            <Title
+              text="A segurança começa aqui, baixe o Uri e conecte-se com sua
+            comunidade."
+              level={1}
+            />
+          </div>
 
           <p>
             Juntos, relatamos ocorrências, cuidamos uns dos outros e fazemos do
