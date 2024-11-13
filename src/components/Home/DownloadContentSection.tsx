@@ -29,7 +29,10 @@ const DownloadContentSection = () => (
             nosso bairro um lugar melhor para viver. Tudo de forma simples e
             gratuita.
           </p>
-          {/* <div className="app_buttons">
+          <div className="download_buttom">
+            <a>Em breve </a>
+          </div>
+          <div className="app_buttons">
             <a
               href="https://play.google.com/store/apps/details?id=com.seuapp.android"
               target="_blank"
@@ -39,7 +42,7 @@ const DownloadContentSection = () => (
                 src="/svg/GetItOnGooglePlayBadge.png"
                 alt="Baixar na Google Play"
                 width={150}
-                height={100}
+                height={55}
                 style={{ objectFit: 'contain' }}
                 priority
                 unoptimized
@@ -55,13 +58,13 @@ const DownloadContentSection = () => (
                 src="/svg/AppStoreBadge.svg"
                 alt="Baixar na App Store"
                 width={150}
-                height={100}
+                height={55}
                 style={{ objectFit: 'contain' }}
                 priority
                 unoptimized
               />
             </a>
-          </div> */}
+          </div>
         </motion.div>
         <motion.div
           variants={fadeIn('up', 0.5)}
@@ -71,7 +74,7 @@ const DownloadContentSection = () => (
           className="app-store-links"
         >
           <Image
-            src="/svg/phoneDownload.svg"
+            src="/svg/download_section.svg"
             alt="Baixar na App Store"
             width={350}
             height={400}

@@ -26,7 +26,7 @@ const AboutContentSection = () => {
                 whileInView="show"
               >
                 <Image
-                  src="/svg/people-phone.svg"
+                  src="/svg/people-phone2.png"
                   alt="Jovem caminhando ao parque"
                   className="unique-uri-image"
                   width={850}
@@ -59,7 +59,7 @@ const AboutContentSection = () => {
                     quanto condomínios.
                   </p>
                   <a onClick={scrollToForm} className="unique-uri-cta-link">
-                    Conheça o nosso app &rarr;
+                    Conheça o nosso app
                   </a>
                 </motion.div>
               </figcaption>
