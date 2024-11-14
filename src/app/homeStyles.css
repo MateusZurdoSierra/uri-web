@@ -1763,9 +1763,8 @@ form button:hover {
     justify-content: center;
     align-items: stretch;
     flex-direction: column;
-    height: 100vh;
     max-width: 100%;
-    padding: 2rem;
+    padding: 4rem 2rem;
     width: 100%;
   }
 
